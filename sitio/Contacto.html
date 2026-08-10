@@ -212,14 +212,29 @@ class Component extends DCLogic {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
   }
 
-  handleSubmit = (e) => {
+    handleSubmit = (e) => {
     e.preventDefault();
     this.setState({ touched: true });
-    const { nombre, email, mensaje, privacyChecked } = this.state;
+    const { nombre, empresa, telefono, ciudad, email, mensaje, privacyChecked } = this.state;
     if (nombre.trim() && this.isEmailValid(email) && mensaje.trim() && privacyChecked) {
-      this.setState({ submitted: true });
+      fetch('https://myblog-572v7zgniq.live-website.com/contacto.php', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams({ nombre, empresa, telefono, ciudad, email, mensaje }).toString(),
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          if (data.ok) {
+            this.setState({ submitted: true });
+          } else {
+            alert('No se pudo enviar el mensaje. Inténtalo de nuevo o escríbenos a gema@gminayo.com.');
+          }
+        })
+        .catch(() => {
+          alert('No se pudo enviar el mensaje. Inténtalo de nuevo o escríbenos a gema@gminayo.com.');
+        });
     }
-  };
+  }
 
   renderVals() {
     const s = this.state;
