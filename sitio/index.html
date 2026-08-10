@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+    window.__resources = {
+      "https://unpkg.com/react@18.3.1/umd/react.production.min.js": "./vendor/react.production.min.js",
+      "https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js": "./vendor/react-dom.production.min.js",
+      "https://unpkg.com/@babel/standalone@7.29.0/babel.min.js": "./vendor/babel.min.js"
+    };
+  </script>
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="./tokens.css">
+  <link rel="stylesheet" href="./vendor/fonts/fonts.css">
+  <script src="./image-slot.js"></script>
+  <meta name="description" content="Gminayo — Marketing con sonrisa humana, al servicio de las ventas y el revenue de tu empresa. Social media, ads, automatización, branding y diseño web para pymes y autónomos.">
+  <style>
+    body { margin: 0; background: #FFFFFF; }
+    ::selection { background: #EC1264; color: #FFFFFF; }
+    @keyframes gm-fade-up { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+  </style>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Organization","name":"Gminayo","url":"https://www.gminayo.com","description":"Marketing con sonrisa humana, al servicio de las ventas y el revenue de tu empresa.","founder":{"@type":"Person","name":"Gema Minayo López"},"email":"gema@gminayo.com","telephone":"+34697540182","sameAs":["https://www.linkedin.com/in/gemaminayolopez","https://www.instagram.com/gminayo_es"]}
+  </script>
+</helmet>
+
+<a href="#main-content" style="position:absolute;left:-9999px;top:0;background:#0B1B2C;color:#fff;padding:14px 20px;borderRadius:0 0 10px 0;fontFamily:Inter,sans-serif;fontWeight:600;fontSize:15px;zIndex:1000;textDecoration:none" style-focus="left:0;outline:3px solid #EC1264;outlineOffset:2px">Saltar al contenido</a>
+
+<div style="fontFamily:Inter,sans-serif;color:#0B1B2C;background:#FFFFFF;overflow-x:hidden">
+
+  <header style="display:flex;alignItems:center;flexWrap:wrap;gap:14px 40px;padding:18px clamp(20px,5vw,64px);borderBottom:1px solid #EAEEF3;position:relative;zIndex:10;background:#FFFFFF">
+    <a href="index.html" aria-label="Gminayo, inicio" style="display:flex;alignItems:center;gap:10px;textDecoration:none" style-focus="outline:3px solid #EC1264;outlineOffset:4px;borderRadius:8px">
+      <img src="logolockupnotag.png" alt="Gminayo" style="height:76px;width:auto;display:block">
+    </a>
+    <nav aria-label="Navegación principal" style="display:flex;alignItems:center;flexWrap:wrap;gap:6px 16px;marginLeft:115px">
+      <a href="Servicios.html" style="color:#0B1B2C;textDecoration:none;fontSize:17px;fontWeight:500" style-hover="color:#EC1264" style-focus="outline:3px solid #EC1264;outlineOffset:4px;borderRadius:4px">Servicios</a>
+      <a href="Paquetes.html" style="color:#0B1B2C;textDecoration:none;fontSize:17px;fontWeight:500" style-hover="color:#EC1264" style-focus="outline:3px solid #EC1264;outlineOffset:4px;borderRadius:4px">Paquetes</a>
+      <a href="Casos-de-Exito.html" style="color:#0B1B2C;textDecoration:none;fontSize:17px;fontWeight:500" style-hover="color:#EC1264" style-focus="outline:3px solid #EC1264;outlineOffset:4px;borderRadius:4px">Casos de éxito</a>
+      <a href="Blog.html" style="color:#0B1B2C;textDecoration:none;fontSize:17px;fontWeight:500" style-hover="color:#EC1264" style-focus="outline:3px solid #EC1264;outlineOffset:4px;borderRadius:4px">Blog</a>
+      <a href="Sobre-Nosotros.html" style="color:#0B1B2C;textDecoration:none;fontSize:17px;fontWeight:500" style-hover="color:#EC1264" style-focus="outline:3px solid #EC1264;outlineOffset:4px;borderRadius:4px">Sobre nosotros</a>
+      <a href="Contacto.html" style="color:#0B1B2C;textDecoration:none;fontSize:17px;fontWeight:500" style-hover="color:#EC1264" style-focus="outline:3px solid #EC1264;outlineOffset:4px;borderRadius:4px">Contacto</a>
+    </nav>
+    <a href="Landing-Diagnostico.html" style="background:#EC1264;color:#FFFFFF;textDecoration:none;fontSize:14px;fontWeight:600;padding:10px 20px;borderRadius:999px;whiteSpace:nowrap;marginLeft:auto" style-hover="background:#c90e56" style-focus="outline:3px solid #0B1B2C;outlineOffset:3px">Reserva tu diagnóstico</a>
+  </header>
+
+  <main id="main-content">
+
+    <!-- HERO -->
+    <section aria-labelledby="hero-h1" data-screen-label="Home — Hero" style="padding:clamp(48px,8vw,96px) clamp(20px,5vw,64px) clamp(56px,7vw,88px);maxWidth:1200px;margin:0 auto;display:grid;gridTemplateColumns:1.1fr 1fr;gap:56px;alignItems:center">
+      <div style="display:flex;flexDirection:column;gap:28px">
+        <p style="margin:0;fontSize:14px;fontWeight:700;letterSpacing:0.08em;textTransform:uppercase;color:#EC1264">Consultora de marketing y social media</p>
+        <h1 id="hero-h1" style="margin:0;fontFamily:Poppins,sans-serif;fontWeight:700;fontSize:clamp(36px,5.4vw,64px);lineHeight:1.08;color:#0B1B2C;maxWidth:16ch">Marketing con sonrisa humana.</h1>
+        <p style="margin:0;fontSize:clamp(18px,2.2vw,24px);lineHeight:1.5;color:#3E4C5C;maxWidth:38ch;textWrap:pretty">Conectamos personas. Impulsamos marcas. Generamos negocio.</p>
+      <p style="margin:0;fontSize:17px;lineHeight:1.6;color:#5B6B7C;maxWidth:52ch;textWrap:pretty">Combinamos estrategia, creatividad, automatización e inteligencia artificial para transformar la comunicación de tu marca en crecimiento real.</p>
+        <div style="display:flex;flexWrap:wrap;gap:14px 24px;alignItems:center;marginTop:8px">
+          <a href="Landing-Diagnostico.html" style="background:#0B1B2C;color:#FFFFFF;textDecoration:none;fontSize:16px;fontWeight:600;padding:16px 30px;borderRadius:999px" style-hover="background:#16304a" style-focus="outline:3px solid #EC1264;outlineOffset:3px">Reserva tu diagnóstico</a>
+          <a href="Servicios.html" style="color:#0B1B2C;textDecoration:underline;textUnderlineOffset:4px;fontSize:16px;fontWeight:600" style-hover="color:#EC1264" style-focus="outline:3px solid #EC1264;outlineOffset:3px;borderRadius:4px">Ver todos los servicios →</a>
+        </div>
+        <div style="display:flex;flexWrap:wrap;gap:40px;marginTop:24px;paddingTop:32px;borderTop:1px solid #EAEEF3">
+          <div>
+            <p style="margin:0;fontFamily:Poppins,sans-serif;fontWeight:700;fontSize:36px;color:#0B1B2C">+150</p>
+            <p style="margin:4px 0 0;fontSize:15px;color:#5B6B7C">Proyectos</p>
+          </div>
+          <div>
+            <p style="margin:0;fontFamily:Poppins,sans-serif;fontWeight:700;fontSize:36px;color:#0B1B2C">+60</p>
+            <p style="margin:4px 0 0;fontSize:15px;color:#5B6B7C">Clientes</p>
+          </div>
+          <div>
+            <p style="margin:0;fontFamily:Poppins,sans-serif;fontWeight:700;fontSize:36px;color:#0B1B2C">+20</p>
+            <p style="margin:4px 0 0;fontSize:15px;color:#5B6B7C">Años creando</p>
+          </div>
+        </div>
+      </div>
+      <image-slot id="foto-hero" shape="rounded" radius="24" placeholder="Foto de Gema o del equipo" style="width:100%;aspectRatio:4/5"></image-slot>
+    </section>
+
+    <!-- QUIÉNES SOMOS -->
+    <section aria-labelledby="quienes-h2" data-screen-label="Home — Quiénes somos" style="background:#F4F7FB;padding:clamp(56px,7vw,96px) clamp(20px,5vw,64px)">
+      <div style="maxWidth:1200px;margin:0 auto;display:grid;gridTemplateColumns:minmax(260px,380px) 1fr;gap:56px;alignItems:start">
+        <image-slot id="foto-gema" shape="rounded" radius="24" placeholder="Foto de Gema Minayo" style="width:100%;aspectRatio:4/5"></image-slot>
+        <div style="display:flex;flexDirection:column;gap:20px">
+          <p style="margin:0;fontSize:14px;fontWeight:700;letterSpacing:0.08em;textTransform:uppercase;color:#EC1264">Quiénes somos</p>
+          <h2 id="quienes-h2" style="margin:0;fontFamily:Poppins,sans-serif;fontWeight:700;fontSize:clamp(28px,3.6vw,40px);lineHeight:1.15;color:#0B1B2C">Detrás de la G· hay mucho más que un logotipo.</h2>
+          <p style="margin:0;fontSize:17px;lineHeight:1.65;color:#3E4C5C;maxWidth:62ch;textWrap:pretty">Hay más de 25 años ayudando a marcas a crecer.</p>
+          <p style="margin:0;fontSize:17px;lineHeight:1.65;color:#3E4C5C;maxWidth:62ch;textWrap:pretty">Hay estrategia, creatividad y experiencia.</p>
+          <p style="margin:0;fontSize:17px;lineHeight:1.65;color:#3E4C5C;maxWidth:62ch;textWrap:pretty">Y hay una forma diferente de entender el marketing.</p>
+          <p style="margin:0;fontSize:17px;lineHeight:1.65;color:#3E4C5C;maxWidth:62ch;textWrap:pretty">Nuestra G· sonríe porque creemos que las mejores marcas son las que consiguen emocionar, conectar y vender al mismo tiempo.</p>
+          <p style="margin:0;fontSize:17px;lineHeight:1.65;color:#3E4C5C;maxWidth:62ch;textWrap:pretty">Al frente de este proyecto está Gema Minayo, una de las primeras Community Managers de España, especialista en Marketing Digital, Social Media y eCommerce, que ha acompañado durante más de dos décadas a empresas, profesionales y marcas personales en su crecimiento.</p>
+          <p style="margin:0;fontSize:17px;lineHeight:1.65;color:#3E4C5C;maxWidth:62ch;textWrap:pretty">Hoy seguimos trabajando con la misma filosofía que el primer día:</p>
+          <blockquote style="margin:12px 0 0;padding:20px 0 0;borderTop:2px solid #14B8A6;fontFamily:Poppins,sans-serif;fontWeight:600;fontSize:20px;lineHeight:1.4;color:#0B1B2C">"Las personas no recuerdan lo que publicas. Recuerdan cómo les haces sentir."</blockquote>
+          <a href="Sobre-Nosotros.html" style="color:#0B1B2C;textDecoration:underline;textUnderlineOffset:4px;fontSize:16px;fontWeight:600;marginTop:4px" style-hover="color:#EC1264" style-focus="outline:3px solid #EC1264;outlineOffset:3px;borderRadius:4px">Conoce más sobre nosotros →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- EL PROBLEMA -->
+    <section aria-labelledby="problema-h2" data-screen-label="Home — El problema" style="padding:clamp(56px,7vw,96px) clamp(20px,5vw,64px);maxWidth:1200px;margin:0 auto">
+      <div style="maxWidth:64ch;marginBottom:44px;display:flex;flexDirection:column;gap:16px">
+        <p style="margin:0;fontSize:14px;fontWeight:700;letterSpacing:0.08em;textTransform:uppercase;color:#EC1264">El problema</p>
+        <h2 id="problema-h2" style="margin:0;fontFamily:Poppins,sans-serif;fontWeight:700;fontSize:clamp(26px,3.4vw,38px);lineHeight:1.2;color:#0B1B2C">Todo el mundo «tiene redes sociales», ¿pero consigue resultados?</h2>
+      </div>
+      <div style="display:grid;gridTemplateColumns:repeat(auto-fit,minmax(260px,1fr));gap:24px">
+        <div style="background:#F4F7FB;borderRadius:20px;padding:28px;display:flex;flexDirection:column;gap:10px;boxShadow:0 3px 16px rgba(11,27,44,0.07)">
+          <h3 style="margin:0;fontFamily:Poppins,sans-serif;fontWeight:600;fontSize:18px;color:#0B1B2C">Contenido que nadie conecta con ventas</h3>
+          <p style="margin:0;fontSize:15px;lineHeight:1.6;color:#5B6B7C">Publicaciones sueltas que entretienen un momento y mueren al mes siguiente, porque nadie las une con el resto del negocio.</p>
+        </div>
+        <div style="background:#F4F7FB;borderRadius:20px;padding:28px;display:flex;flexDirection:column;gap:10px;boxShadow:0 3px 16px rgba(11,27,44,0.07)">
+          <h3 style="margin:0;fontFamily:Poppins,sans-serif;fontWeight:600;fontSize:18px;color:#0B1B2C">Redes que nadie mide</h3>
+          <p style="margin:0;fontSize:15px;lineHeight:1.6;color:#5B6B7C">Se publica «porque hay que publicar»: nadie responde por el resultado ni sabe si funciona.</p>
+        </div>
+        <div style="background:#F4F7FB;borderRadius:20px;padding:28px;display:flex;flexDirection:column;gap:10px;boxShadow:0 3px 16px rgba(11,27,44,0.07)">
+          <h3 style="margin:0;fontFamily:Poppins,sans-serif;fontWeight:600;fontSize:18px;color:#0B1B2C">Presupuesto de Ads sin estrategia</h3>
+          <p style="margin:0;fontSize:15px;lineHeight:1.6;color:#5B6B7C">Campañas activas que generan clics y alcance, pero no leads calificados ni ventas reales.</p>
+        </div>
+        <div style="background:#F4F7FB;borderRadius:20px;padding:28px;display:flex;flexDirection:column;gap:10px;boxShadow:0 3px 16px rgba(11,27,44,0.07)">
+          <h3 style="margin:0;fontFamily:Poppins,sans-serif;fontWeight:600;fontSize:18px;color:#0B1B2C">Invisibles para Google y para la IA</h3>
+          <p style="margin:0;fontSize:15px;lineHeight:1.6;color:#5B6B7C">Tus clientes ya preguntan a ChatGPT o Google por lo que vendes, y la respuesta no te menciona.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- LO QUE HACEMOS (pilares) -->
+    <section aria-labelledby="pilares-h2" data-screen-label="Home — Pilares" style="background:#F4F7FB;padding:clamp(56px,7vw,96px) clamp(20px,5vw,64px)">
+      <div style="maxWidth:1200px;margin:0 auto">
+        <div style="maxWidth:70ch;marginBottom:44px;display:flex;flexDirection:column;gap:16px">
+          <p style="margin:0;fontSize:14px;fontWeight:700;letterSpacing:0.08em;textTransform:uppercase;color:#EC1264">Lo que hacemos</p>
+          <h2 id="pilares-h2" style="margin:0;fontFamily:Poppins,sans-serif;fontWeight:700;fontSize:clamp(26px,3.4vw,38px);lineHeight:1.2;color:#0B1B2C">Implementamos marketing y social media que funcionan.</h2>
+          <p style="margin:0;fontSize:17px;lineHeight:1.6;color:#3E4C5C;textWrap:pretty">Somos una consultora de marketing digital y social media, diferente y humana, que convierte problemas en estrategias que generan ventas, desde la definición hasta la ejecución del día a día.</p>
+        </div>
+        <div style="display:grid;gridTemplateColumns:repeat(auto-fit,minmax(260px,1fr));gap:24px">
+          <div style="background:#FFFFFF;borderRadius:20px;padding:32px;display:flex;flexDirection:column;gap:12px;boxShadow:0 3px 16px rgba(11,27,44,0.07)">
+            <p style="margin:0;fontFamily:Poppins,sans-serif;fontWeight:700;fontSize:15px;color:#14B8A6">01</p>
+            <h3 style="margin:0;fontFamily:Poppins,sans-serif;fontWeight:600;fontSize:20px;color:#0B1B2C">Visibilidad</h3>
+            <p style="margin:0;fontSize:15px;lineHeight:1.6;color:#5B6B7C">Trabajamos el social media, el contenido, el SEO y el GEO para que tu marca sea entendida, citada y recomendada por las personas, los buscadores y las IA.</p>
+          </div>
+          <div style="background:#FFFFFF;borderRadius:20px;padding:32px;display:flex;flexDirection:column;gap:12px;boxShadow:0 3px 16px rgba(11,27,44,0.07)">
+            <p style="margin:0;fontFamily:Poppins,sans-serif;fontWeight:700;fontSize:15px;color:#14B8A6">02</p>
+            <h3 style="margin:0;fontFamily:Poppins,sans-serif;fontWeight:600;fontSize:20px;color:#0B1B2C">Rentabilidad</h3>
+            <p style="margin:0;fontSize:15px;lineHeight:1.6;color:#5B6B7C">Cada pieza y cada campaña se mide contra el negocio: conversión, coste por lead y ciclo de venta — no solo alcance.</p>
+          </div>
+          <div style="background:#FFFFFF;borderRadius:20px;padding:32px;display:flex;flexDirection:column;gap:12px;boxShadow:0 3px 16px rgba(11,27,44,0.07)">
+            <p style="margin:0;fontFamily:Poppins,sans-serif;fontWeight:700;fontSize:15px;color:#14B8A6">03</p>
+            <h3 style="margin:0;fontFamily:Poppins,sans-serif;fontWeight:600;fontSize:20px;color:#0B1B2C">Eficiencia</h3>
+            <p style="margin:0;fontSize:15px;lineHeight:1.6;color:#5B6B7C">Automatizamos lo repetitivo — emailing, leads, citas — para que tu gente se concentre en crear valor, no en ejecutar tareas.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUOTE -->
+    <section aria-label="Frase destacada" data-screen-label="Home — Cita" style="background:#0B1B2C;padding:clamp(64px,9vw,110px) clamp(20px,5vw,64px);textAlign:center">
+      <div style="maxWidth:820px;margin:0 auto;display:flex;flexDirection:column;gap:24px;alignItems:center">
+        <p style="margin:0;fontFamily:Poppins,sans-serif;fontWeight:700;fontSize:clamp(26px,4vw,42px);lineHeight:1.3;color:#FFFFFF;textWrap:pretty">El social media no existe para tener seguidores.<br>Existe para que suene la caja registradora.</p>
+        <p style="margin:0;fontSize:16px;fontWeight:500;color:#8FE3D6;letterSpacing:0.02em">Método probado &gt; datos que comprueban &gt; clientes que dejan dinero.</p>
+      </div>
+    </section>
+
+    <!-- SERVICIOS TEASER -->
+    <section aria-labelledby="servicios-h2" data-screen-label="Home — Servicios" style="padding:clamp(56px,7vw,96px) clamp(20px,5vw,64px);maxWidth:1200px;margin:0 auto">
+      <div style="display:flex;flexWrap:wrap;justifyContent:space-between;alignItems:flex-end;gap:20px;marginBottom:44px">
+        <div style="maxWidth:60ch;display:flex;flexDirection:column;gap:16px">
+          <p style="margin:0;fontSize:14px;fontWeight:700;letterSpacing:0.08em;textTransform:uppercase;color:#EC1264">Qué hacemos</p>
+          <h2 id="servicios-h2" style="margin:0;fontFamily:Poppins,sans-serif;fontWeight:700;fontSize:clamp(26px,3.4vw,38px);lineHeight:1.2;color:#0B1B2C">Ponemos el marketing al servicio de tus ventas.</h2>
+        </div>
+      </div>
+      <div style="display:grid;gridTemplateColumns:repeat(auto-fit,minmax(260px,1fr));gap:20px">
+        <a href="Servicios.html#social-ads" style="textDecoration:none;color:inherit;display:block;border:1px solid #EAEEF3;borderRadius:20px;padding:28px;transition:border-color .15s,box-shadow .15s;boxShadow:0 3px 16px rgba(11,27,44,0.07)" style-hover="borderColor:#EC1264" style-focus="outline:3px solid #EC1264;outlineOffset:3px">
+          <h3 style="margin:0 0 8px;fontFamily:Poppins,sans-serif;fontWeight:600;fontSize:18px;color:#0B1B2C">Social Media + Ads</h3>
+          <p style="margin:0;fontSize:14px;lineHeight:1.6;color:#5B6B7C">Metodología propia: Presencia, Conversión, Crecimiento.</p>
+        </a>
+        <a href="Servicios.html#automatizacion" style="textDecoration:none;color:inherit;display:block;border:1px solid #EAEEF3;borderRadius:20px;padding:28px;boxShadow:0 3px 16px rgba(11,27,44,0.07)" style-hover="borderColor:#EC1264;boxShadow:0 6px 22px rgba(11,27,44,0.1)" style-focus="outline:3px solid #EC1264;outlineOffset:3px">
+          <h3 style="margin:0 0 8px;fontFamily:Poppins,sans-serif;fontWeight:600;fontSize:18px;color:#0B1B2C">Marketing de automatización</h3>
+          <p style="margin:0;fontSize:14px;lineHeight:1.6;color:#5B6B7C">Emailing, leads, citas y sistemas a medida conectados a tu CRM.</p>
+        </a>
+        <a href="Servicios.html#branding" style="textDecoration:none;color:inherit;display:block;border:1px solid #EAEEF3;borderRadius:20px;padding:28px;boxShadow:0 3px 16px rgba(11,27,44,0.07)" style-hover="borderColor:#EC1264;boxShadow:0 6px 22px rgba(11,27,44,0.1)" style-focus="outline:3px solid #EC1264;outlineOffset:3px">
+          <h3 style="margin:0 0 8px;fontFamily:Poppins,sans-serif;fontWeight:600;fontSize:18px;color:#0B1B2C">Branding corporativo y personal</h3>
+          <p style="margin:0;fontSize:14px;lineHeight:1.6;color:#5B6B7C">Logotipo, sistema visual, marca personal y papelería.</p>
+        </a>
+        <a href="Servicios.html#reputacion" style="textDecoration:none;color:inherit;display:block;border:1px solid #EAEEF3;borderRadius:20px;padding:28px;boxShadow:0 3px 16px rgba(11,27,44,0.07)" style-hover="borderColor:#EC1264;boxShadow:0 6px 22px rgba(11,27,44,0.1)" style-focus="outline:3px solid #EC1264;outlineOffset:3px">
+          <h3 style="margin:0 0 8px;fontFamily:Poppins,sans-serif;fontWeight:600;fontSize:18px;color:#0B1B2C">Reputación y manejo de crisis</h3>
+          <p style="margin:0;fontSize:14px;lineHeight:1.6;color:#5B6B7C">Monitorización, protocolo de respuesta y gestión de reseñas.</p>
+        </a>
+        <a href="Servicios.html#web" style="textDecoration:none;color:inherit;display:block;border:1px solid #EAEEF3;borderRadius:20px;padding:28px;boxShadow:0 3px 16px rgba(11,27,44,0.07)" style-hover="borderColor:#EC1264;boxShadow:0 6px 22px rgba(11,27,44,0.1)" style-focus="outline:3px solid #EC1264;outlineOffset:3px">
+          <h3 style="margin:0 0 8px;fontFamily:Poppins,sans-serif;fontWeight:600;fontSize:18px;color:#0B1B2C">Diseño web</h3>
+          <p style="margin:0;fontSize:14px;lineHeight:1.6;color:#5B6B7C">Sitios y landings a medida, pensados para SEO y conversión.</p>
+        </a>
+        <a href="Servicios.html#grafico" style="textDecoration:none;color:inherit;display:block;border:1px solid #EAEEF3;borderRadius:20px;padding:28px;boxShadow:0 3px 16px rgba(11,27,44,0.07)" style-hover="borderColor:#EC1264;boxShadow:0 6px 22px rgba(11,27,44,0.1)" style-focus="outline:3px solid #EC1264;outlineOffset:3px">
+          <h3 style="margin:0 0 8px;fontFamily:Poppins,sans-serif;fontWeight:600;fontSize:18px;color:#0B1B2C">Diseño gráfico</h3>
+          <p style="margin:0;fontSize:14px;lineHeight:1.6;color:#5B6B7C">Piezas para redes, campañas, catálogos y creatividades para Ads.</p>
+        </a>
+        <a href="Servicios.html" style="textDecoration:none;color:#0B1B2C;display:flex;alignItems:center;justifyContent:center;background:#F4F7FB;borderRadius:20px;padding:28px;fontFamily:Poppins,sans-serif;fontWeight:600;fontSize:16px;textAlign:center" style-hover="color:#EC1264" style-focus="outline:3px solid #EC1264;outlineOffset:3px">Ver todos los servicios →</a>
+      </div>
+    </section>
+
+    <!-- CÓMO TRABAJAMOS -->
+    <section aria-labelledby="proceso-h2" data-screen-label="Home — Cómo trabajamos" style="background:#F4F7FB;padding:clamp(56px,7vw,96px) clamp(20px,5vw,64px)">
+      <div style="maxWidth:1200px;margin:0 auto">
+        <div style="maxWidth:70ch;marginBottom:44px;display:flex;flexDirection:column;gap:16px">
+          <p style="margin:0;fontSize:14px;fontWeight:700;letterSpacing:0.08em;textTransform:uppercase;color:#EC1264">Cómo trabajamos</p>
+          <h2 id="proceso-h2" style="margin:0;fontFamily:Poppins,sans-serif;fontWeight:700;fontSize:clamp(26px,3.4vw,38px);lineHeight:1.2;color:#0B1B2C">Método y personas antes que plantillas.</h2>
+        </div>
+        <ol style="listStyle:none;margin:0;padding:0;display:grid;gridTemplateColumns:repeat(auto-fit,minmax(190px,1fr));gap:24px">
+          <li style="display:flex;flexDirection:column;gap:10px">
+            <p style="margin:0;fontFamily:Poppins,sans-serif;fontWeight:700;fontSize:20px;color:#EC1264">01</p>
+            <h3 style="margin:0;fontFamily:Poppins,sans-serif;fontWeight:600;fontSize:20px;color:#0B1B2C">Diagnóstico</h3>
+            <p style="margin:0;fontSize:14px;lineHeight:1.6;color:#5B6B7C">Analizamos tu marca, público y objetivos.</p>
+          </li>
+          <li style="display:flex;flexDirection:column;gap:10px">
+            <p style="margin:0;fontFamily:Poppins,sans-serif;fontWeight:700;fontSize:20px;color:#EC1264">02</p>
+            <h3 style="margin:0;fontFamily:Poppins,sans-serif;fontWeight:600;fontSize:20px;color:#0B1B2C">Diseño</h3>
+            <p style="margin:0;fontSize:14px;lineHeight:1.6;color:#5B6B7C">Creamos conceptos visuales alineados a tu mensaje.</p>
+          </li>
+          <li style="display:flex;flexDirection:column;gap:10px">
+            <p style="margin:0;fontFamily:Poppins,sans-serif;fontWeight:700;fontSize:20px;color:#EC1264">03</p>
+            <h3 style="margin:0;fontFamily:Poppins,sans-serif;fontWeight:600;fontSize:20px;color:#0B1B2C">Implementación</h3>
+            <p style="margin:0;fontSize:14px;lineHeight:1.6;color:#5B6B7C">Creamos, publicamos y lanzamos cada pieza y campaña.</p>
+          </li>
+          <li style="display:flex;flexDirection:column;gap:10px">
+            <p style="margin:0;fontFamily:Poppins,sans-serif;fontWeight:700;fontSize:20px;color:#EC1264">04</p>
+            <h3 style="margin:0;fontFamily:Poppins,sans-serif;fontWeight:600;fontSize:20px;color:#0B1B2C">Adopción</h3>
+            <p style="margin:0;fontSize:14px;lineHeight:1.6;color:#5B6B7C">Acompañamiento y ajuste según cómo responde tu audiencia.</p>
+          </li>
+          <li style="display:flex;flexDirection:column;gap:10px">
+            <p style="margin:0;fontFamily:Poppins,sans-serif;fontWeight:700;fontSize:20px;color:#EC1264">05</p>
+            <h3 style="margin:0;fontFamily:Poppins,sans-serif;fontWeight:600;fontSize:20px;color:#0B1B2C">Medición</h3>
+            <p style="margin:0;fontSize:14px;lineHeight:1.6;color:#5B6B7C">KPIs de negocio: alcance, leads, conversión y ventas.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- RESULTADOS -->
+    <section aria-labelledby="resultados-h2" data-screen-label="Home — Resultados" style="padding:clamp(56px,7vw,96px) clamp(20px,5vw,64px);maxWidth:1200px;margin:0 auto">
+      <div style="maxWidth:70ch;marginBottom:44px;display:flex;flexDirection:column;gap:16px">
+        <p style="margin:0;fontSize:14px;fontWeight:700;letterSpacing:0.08em;textTransform:uppercase;color:#EC1264">Resultados</p>
+        <h2 id="resultados-h2" style="margin:0;fontFamily:Poppins,sans-serif;fontWeight:700;fontSize:clamp(26px,3.4vw,38px);lineHeight:1.2;color:#0B1B2C">Nos medimos por lo que importa.</h2>
+        <p style="margin:0;fontSize:16px;lineHeight:1.6;color:#5B6B7C">Cada proyecto arranca con una línea base y cierra con un dato.</p>
+      </div>
+      <div style="display:grid;gridTemplateColumns:repeat(auto-fit,minmax(220px,1fr));gap:24px">
+        <div style="borderTop:3px solid #EC1264;paddingTop:18px;display:flex;flexDirection:column;gap:8px">
+          <h3 style="margin:0;fontFamily:Poppins,sans-serif;fontWeight:600;fontSize:18px;color:#0B1B2C">Engagement</h3>
+          <p style="margin:0;fontSize:14px;lineHeight:1.6;color:#5B6B7C">Crecimiento de alcance e interacción con tu comunidad.</p>
+        </div>
+        <div style="borderTop:3px solid #14B8A6;paddingTop:18px;display:flex;flexDirection:column;gap:8px">
+          <h3 style="margin:0;fontFamily:Poppins,sans-serif;fontWeight:600;fontSize:18px;color:#0B1B2C">Leads</h3>
+          <p style="margin:0;fontSize:14px;lineHeight:1.6;color:#5B6B7C">Conversión comercial: mejora etapa por etapa del embudo Lead, MQL, SQL.</p>
+        </div>
+        <div style="borderTop:3px solid #EC1264;paddingTop:18px;display:flex;flexDirection:column;gap:8px">
+          <h3 style="margin:0;fontFamily:Poppins,sans-serif;fontWeight:600;fontSize:18px;color:#0B1B2C">Ventas atribuidas</h3>
+          <p style="margin:0;fontSize:14px;lineHeight:1.6;color:#5B6B7C">Caja registradora moviéndose, no solo likes.</p>
+        </div>
+        <div style="borderTop:3px solid #14B8A6;paddingTop:18px;display:flex;flexDirection:column;gap:8px">
+          <h3 style="margin:0;fontFamily:Poppins,sans-serif;fontWeight:600;fontSize:18px;color:#0B1B2C">Visibilidad</h3>
+          <p style="margin:0;fontSize:14px;lineHeight:1.6;color:#5B6B7C">Posicionamiento, menciones y tráfico en Google y en las IA.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLIENTES -->
+    <section aria-labelledby="clientes-h2" data-screen-label="Home — Clientes" style="background:#F4F7FB;padding:clamp(56px,7vw,96px) clamp(20px,5vw,64px)">
+      <div style="maxWidth:1200px;margin:0 auto">
+        <div style="display:flex;flexWrap:wrap;justifyContent:space-between;alignItems:flex-end;gap:20px;marginBottom:40px">
+          <div style="display:flex;flexDirection:column;gap:16px">
+            <p style="margin:0;fontSize:14px;fontWeight:700;letterSpacing:0.08em;textTransform:uppercase;color:#EC1264">Clientes y referencias</p>
+            <h2 id="clientes-h2" style="margin:0;fontFamily:Poppins,sans-serif;fontWeight:700;fontSize:clamp(26px,3.4vw,38px);lineHeight:1.2;color:#0B1B2C">Marcas que ya confían en nosotros.</h2>
+          </div>
+          <a href="Casos-de-Exito.html" style="color:#0B1B2C;textDecoration:underline;textUnderlineOffset:4px;fontSize:16px;fontWeight:600;whiteSpace:nowrap;marginLeft:auto" style-hover="color:#EC1264" style-focus="outline:3px solid #EC1264;outlineOffset:3px;borderRadius:4px">Ver casos de éxito →</a>
+        </div>
+        <div style="display:grid;gridTemplateColumns:repeat(auto-fit,minmax(140px,1fr));gap:20px;marginBottom:40px">
+          <image-slot id="logo-sandav" shape="rounded" radius="16" placeholder="Logo Sandav Consultores" style="width:100%;height:90px"></image-slot>
+          <image-slot id="logo-warner" shape="rounded" radius="16" placeholder="Logo Parque Warner" style="width:100%;height:90px"></image-slot>
+          <image-slot id="logo-workcenter" shape="rounded" radius="16" placeholder="Logo Workcenter" style="width:100%;height:90px"></image-slot>
+          <image-slot id="logo-crosslove" shape="rounded" radius="16" placeholder="Logo CrossLoveStore" style="width:100%;height:90px"></image-slot>
+          <image-slot id="logo-solan" shape="rounded" radius="16" placeholder="Logo Solán de Cabras" style="width:100%;height:90px"></image-slot>
+          <image-slot id="logo-o2" shape="rounded" radius="16" placeholder="Logo O2 Centro Wellness" style="width:100%;height:90px"></image-slot>
+        </div>
+        <div style="display:grid;gridTemplateColumns:repeat(auto-fit,minmax(240px,1fr));gap:24px">
+          <div style="background:#FFFFFF;borderRadius:20px;padding:24px">
+            <p style="margin:0;fontFamily:Poppins,sans-serif;fontWeight:700;fontSize:15px;lineHeight:1.6;color:#0B1B2C">+370.000 reproducciones logradas en un solo reel para una marca personal del Dr. Alejandro Monzón.</p>
+          </div>
+          <div style="background:#FFFFFF;borderRadius:20px;padding:24px">
+            <p style="margin:0;fontFamily:Poppins,sans-serif;fontWeight:700;fontSize:15px;lineHeight:1.6;color:#0B1B2C">+40.000 seguidores en 2 años y ventas B2B para Sandav Consultores, con un engagement superior al 6%.</p>
+          </div>
+          <div style="background:#FFFFFF;borderRadius:20px;padding:24px">
+            <p style="margin:0;fontFamily:Poppins,sans-serif;fontWeight:700;fontSize:15px;lineHeight:1.6;color:#0B1B2C">+30% de incremento en conversión de ventas para Parque Warner Madrid.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section aria-labelledby="cta-final-h2" data-screen-label="Home — CTA final" style="background:#0B1B2C;padding:clamp(64px,9vw,110px) clamp(20px,5vw,64px);textAlign:center">
+      <div style="maxWidth:760px;margin:0 auto;display:flex;flexDirection:column;gap:32px;alignItems:center">
+        <h2 id="cta-final-h2" style="margin:0;fontFamily:Poppins,sans-serif;fontWeight:700;fontSize:clamp(28px,4vw,44px);lineHeight:1.25;color:#FFFFFF;textWrap:pretty">Hagamos que tu marca vuelva a hacer sonreír.</h2>
+        <p style="margin:0;fontSize:17px;lineHeight:1.6;color:#B7C0CA;maxWidth:56ch;textWrap:pretty">No creemos en soluciones estándar. Escuchamos, entendemos tu negocio y construimos estrategias que conectan con las personas y hacen crecer las ventas.</p>
+        <a href="Landing-Diagnostico.html" style="background:#EC1264;color:#FFFFFF;textDecoration:none;fontSize:17px;fontWeight:600;padding:18px 36px;borderRadius:999px" style-hover="background:#ff2f7f" style-focus="outline:3px solid #FFFFFF;outlineOffset:3px">Quiero hacer crecer mi marca</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer style="padding:clamp(48px,6vw,72px) clamp(20px,5vw,64px) 32px;background:#FFFFFF;borderTop:1px solid #EAEEF3">
+    <div style="maxWidth:1200px;margin:0 auto;display:grid;gridTemplateColumns:repeat(auto-fit,minmax(220px,1fr));gap:40px;marginBottom:40px">
+      <div style="display:flex;flexDirection:column;gap:14px">
+        <img src="logolockupnotag.png" alt="Gminayo" style="height:88px;width:auto;alignSelf:flex-start">
+        <p style="margin:0;fontFamily:Inter,sans-serif;fontWeight:500;fontSize:13px;color:#8A96A3">Marketing con sonrisa humana</p>
+      </div>
+      <nav aria-label="Mapa del sitio" style="display:flex;flexDirection:column;gap:10px">
+        <p style="margin:0 0 4px;fontSize:13px;fontWeight:700;letterSpacing:0.06em;textTransform:uppercase;color:#0B1B2C">Navegación</p>
+        <a href="Servicios.html" style="color:#5B6B7C;textDecoration:none;fontSize:14px" style-hover="color:#EC1264" style-focus="outline:3px solid #EC1264;outlineOffset:3px">Servicios</a>
+        <a href="Paquetes.html" style="color:#5B6B7C;textDecoration:none;fontSize:14px" style-hover="color:#EC1264" style-focus="outline:3px solid #EC1264;outlineOffset:3px">Paquetes</a>
+        <a href="Casos-de-Exito.html" style="color:#5B6B7C;textDecoration:none;fontSize:14px" style-hover="color:#EC1264" style-focus="outline:3px solid #EC1264;outlineOffset:3px">Casos de éxito</a>
+        <a href="Sobre-Nosotros.html" style="color:#5B6B7C;textDecoration:none;fontSize:14px" style-hover="color:#EC1264" style-focus="outline:3px solid #EC1264;outlineOffset:3px">Sobre nosotros</a>
+      </nav>
+      <div style="display:flex;flexDirection:column;gap:10px">
+        <p style="margin:0 0 4px;fontSize:13px;fontWeight:700;letterSpacing:0.06em;textTransform:uppercase;color:#0B1B2C">Contacto</p>
+        <p style="margin:0;fontSize:14px;color:#5B6B7C">Gema Minayo López</p>
+        <a href="mailto:gema@gminayo.com" style="color:#5B6B7C;textDecoration:none;fontSize:14px" style-hover="color:#EC1264" style-focus="outline:3px solid #EC1264;outlineOffset:3px">gema@gminayo.com</a>
+        <a href="tel:+34697540182" style="color:#5B6B7C;textDecoration:none;fontSize:14px" style-hover="color:#EC1264" style-focus="outline:3px solid #EC1264;outlineOffset:3px">+34 697 540 182</a>
+        <div style="display:flex;gap:16px;marginTop:6px">
+          <div style="display:flex;gap:10px;marginTop:0">
+          <a href="https://www.linkedin.com/in/gemaminayolopez/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Gminayo" style="display:flex;alignItems:center;justifyContent:center;width:36px;height:36px;borderRadius:10px;background:#F4F7FB;color:#0B1B2C;textDecoration:none" style-hover="background:#EC1264;color:#FFFFFF" style-focus="outline:3px solid #EC1264;outlineOffset:3px"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="4" fill="none"/><path d="M7.2 9.5H4.6V19H7.2V9.5ZM5.9 8.3C6.8 8.3 7.4 7.7 7.4 6.9C7.4 6.1 6.8 5.5 5.9 5.5C5 5.5 4.4 6.1 4.4 6.9C4.4 7.7 5 8.3 5.9 8.3ZM19.6 19V13.6C19.6 10.8 18.1 9.5 16.1 9.5C14.5 9.5 13.7 10.4 13.3 11V9.5H10.7C10.7 9.5 10.8 11.1 10.7 19H13.3V13.7C13.3 13.4 13.3 13.1 13.4 12.9C13.7 12.2 14.3 11.5 15.3 11.5C16.6 11.5 17.1 12.5 17.1 13.9V19H19.6Z"/></svg></a>
+          <a href="https://www.instagram.com/gminayo_es/" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Gminayo" style="display:flex;alignItems:center;justifyContent:center;width:36px;height:36px;borderRadius:10px;background:#F4F7FB;color:#0B1B2C;textDecoration:none" style-hover="background:#EC1264;color:#FFFFFF" style-focus="outline:3px solid #EC1264;outlineOffset:3px"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg></a>
+        </div>
+        </div>
+      </div>
+      <div style="display:flex;flexDirection:column;gap:10px">
+        <p style="margin:0 0 4px;fontSize:13px;fontWeight:700;letterSpacing:0.06em;textTransform:uppercase;color:#0B1B2C">Legal</p>
+        <a href="Aviso-Legal.html" style="color:#5B6B7C;textDecoration:none;fontSize:14px" style-hover="color:#EC1264" style-focus="outline:3px solid #EC1264;outlineOffset:3px">Aviso legal</a>
+        <a href="Politica-Privacidad.html" style="color:#5B6B7C;textDecoration:none;fontSize:14px" style-hover="color:#EC1264" style-focus="outline:3px solid #EC1264;outlineOffset:3px">Política de privacidad</a>
+        <a href="Politica-Cookies.html" style="color:#5B6B7C;textDecoration:none;fontSize:14px" style-hover="color:#EC1264" style-focus="outline:3px solid #EC1264;outlineOffset:3px">Política de cookies</a>
+      </div>
+    </div>
+    <p style="margin:0;paddingTop:24px;borderTop:1px solid #EAEEF3;fontSize:13px;color:#8A96A3;maxWidth:1200px;marginLeft:auto;marginRight:auto">© 2026 Gminayo — Gema Minayo López. Todos los derechos reservados.</p>
+  </footer>
+
+  <sc-if value="{{ cookieVisible }}" hint-placeholder-val="{{ false }}">
+    <div role="dialog" aria-label="Consentimiento de cookies" style="position:fixed;left:0;right:0;bottom:0;zIndex:200;background:#0B1B2C;color:#FFFFFF;padding:20px clamp(20px,5vw,64px);display:flex;flexWrap:wrap;gap:16px 32px;alignItems:center;justifyContent:space-between;boxShadow:0 -4px 20px rgba(11,27,44,0.2)">
+      <p style="margin:0;fontSize:14px;lineHeight:1.5;maxWidth:60ch;color:#E6EAF0">Usamos cookies propias y de terceros para mejorar tu experiencia y medir el uso del sitio. Puedes aceptarlas o rechazarlas. Más información en nuestra Política de cookies.</p>
+      <div style="display:flex;gap:12px;flexWrap:wrap">
+        <button type="button" onClick="{{ rejectCookies }}" style="background:transparent;color:#FFFFFF;border:1px solid #4A5A6B;borderRadius:999px;padding:10px 20px;fontSize:14px;fontWeight:600;cursor:pointer;fontFamily:Inter,sans-serif" style-hover="borderColor:#FFFFFF" style-focus="outline:3px solid #14B8A6;outlineOffset:2px">Rechazar</button>
+        <button type="button" onClick="{{ acceptCookies }}" style="background:#EC1264;color:#FFFFFF;border:none;borderRadius:999px;padding:10px 22px;fontSize:14px;fontWeight:600;cursor:pointer;fontFamily:Inter,sans-serif" style-hover="background:#c90e56" style-focus="outline:3px solid #FFFFFF;outlineOffset:2px">Aceptar</button>
+      </div>
+    </div>
+  </sc-if>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { cookieVisible: false };
+
+  componentDidMount() {
+    try {
+      const consent = localStorage.getItem('gminayo-cookie-consent');
+      if (!consent) this.setState({ cookieVisible: true });
+    } catch (e) {}
+  }
+
+  acceptCookies = () => {
+    try { localStorage.setItem('gminayo-cookie-consent', 'accepted'); } catch (e) {}
+    this.setState({ cookieVisible: false });
+  };
+
+  rejectCookies = () => {
+    try { localStorage.setItem('gminayo-cookie-consent', 'rejected'); } catch (e) {}
+    this.setState({ cookieVisible: false });
+  };
+
+  renderVals() {
+    return {
+      cookieVisible: this.state.cookieVisible,
+      acceptCookies: this.acceptCookies,
+      rejectCookies: this.rejectCookies,
+    };
+  }
+}
+
+</script>
+</body>
+</html>

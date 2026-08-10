@@ -1,0 +1,60 @@
+/* Gminayo — Design tokens
+   Fuente: logotipo oficial (uploads/logo-*.png) + deck de ventas 2026.
+   No había tokens previos; estos son la propuesta derivada del logo. */
+
+:root {
+  /* Color — roles semánticos */
+  --color-navy: #0B1B2C;        /* texto principal, fondo invertido (citas, CTA final) */
+  --color-pink: #EC1264;        /* acento primario: CTA, kickers, enlaces activos */
+  --color-teal: #14B8A6;        /* acento secundario: numeración, detalles puntuales */
+  --color-bg: #FFFFFF;          /* fondo base */
+  --color-bg-alt: #F4F7FB;      /* fondo alterno de sección / tarjeta */
+  --color-text-secondary: #3E4C5C;
+  --color-text-muted: #5B6B7C;
+  --color-text-faint: #8A96A3;
+  --color-border: #EAEEF3;
+  --color-error: #C81E4E;
+
+  /* Tipografía */
+  --font-display: 'Poppins', sans-serif;   /* H1–H3, cifras, kickers en mayúscula */
+  --font-body: 'Inter', sans-serif;         /* párrafos, UI, formularios */
+
+  --fs-h1: clamp(32px, 4.6vw, 64px);
+  --fs-h2: clamp(24px, 3.4vw, 40px);
+  --fs-h3: 18px;
+  --fs-body: 16px;
+  --fs-small: 14px;
+  --fs-kicker: 14px;
+
+  /* Espaciado (base 4px) */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-14: 56px;
+  --space-20: 80px;
+
+  /* Grid */
+  --content-max-width: 1200px;
+  --content-padding: clamp(20px, 5vw, 64px);
+
+  /* Radios */
+  --radius-card: 20px;
+  --radius-card-lg: 24px;
+  --radius-pill: 999px;
+
+  /* Sombra (única, para dar profundidad a tarjetas/paneles sobre fondo claro) */
+  --shadow-card: 0 3px 16px rgba(11, 27, 44, 0.07);
+  --shadow-card-strong: 0 8px 28px rgba(236, 18, 100, 0.16);
+
+  /* Breakpoints de referencia (layout fluido con clamp()/flex-wrap, sin @media fijos) */
+  --bp-sm: 480px;
+  --bp-md: 720px;
+  --bp-lg: 900px;
+  --bp-xl: 1000px;
+  --bp-2xl: 1280px;
+}

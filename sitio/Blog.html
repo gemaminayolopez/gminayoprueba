@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+    window.__resources = {
+      "https://unpkg.com/react@18.3.1/umd/react.production.min.js": "./vendor/react.production.min.js",
+      "https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js": "./vendor/react-dom.production.min.js",
+      "https://unpkg.com/@babel/standalone@7.29.0/babel.min.js": "./vendor/babel.min.js"
+    };
+  </script>
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="./tokens.css">
+  <link rel="stylesheet" href="./vendor/fonts/fonts.css">
+  <script src="./image-slot.js"></script>
+  <meta name="description" content="Blog de Gminayo: ideas, guías y casos sobre marketing digital, social media, automatización, branding y diseño web, explicados con sonrisa humana.">
+  <style>
+    body { margin: 0; background: #FFFFFF; }
+    ::selection { background: #EC1264; color: #FFFFFF; }
+  </style>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://www.gminayo.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.gminayo.com/blog"}]}
+  </script>
+</helmet>
+
+<a href="#main-content" style="position:absolute;left:-9999px;top:0;background:#0B1B2C;color:#fff;padding:14px 20px;borderRadius:0 0 10px 0;fontFamily:Inter,sans-serif;fontWeight:600;fontSize:15px;zIndex:1000;textDecoration:none" style-focus="left:0;outline:3px solid #EC1264;outlineOffset:2px">Saltar al contenido</a>
+
+<div style="fontFamily:Inter,sans-serif;color:#0B1B2C;background:#FFFFFF;overflow-x:hidden">
+
+  <header style="display:flex;alignItems:center;flexWrap:wrap;gap:14px 40px;padding:18px clamp(20px,5vw,64px);borderBottom:1px solid #EAEEF3;position:relative;zIndex:10;background:#FFFFFF">
+    <a href="index.html" aria-label="Gminayo, inicio" style="display:flex;alignItems:center;gap:10px;textDecoration:none" style-focus="outline:3px solid #EC1264;outlineOffset:4px;borderRadius:8px">
+      <img src="logolockupnotag.png" alt="Gminayo" style="height:76px;width:auto;display:block">
+    </a>
+    <nav aria-label="Navegación principal" style="display:flex;alignItems:center;flexWrap:wrap;gap:6px 16px;marginLeft:115px">
+      <a href="Servicios.html" style="color:#0B1B2C;textDecoration:none;fontSize:17px;fontWeight:500" style-hover="color:#EC1264" style-focus="outline:3px solid #EC1264;outlineOffset:4px;borderRadius:4px">Servicios</a>
+      <a href="Paquetes.html" style="color:#0B1B2C;textDecoration:none;fontSize:17px;fontWeight:500" style-hover="color:#EC1264" style-focus="outline:3px solid #EC1264;outlineOffset:4px;borderRadius:4px">Paquetes</a>
+      <a href="Casos-de-Exito.html" style="color:#0B1B2C;textDecoration:none;fontSize:17px;fontWeight:500" style-hover="color:#EC1264" style-focus="outline:3px solid #EC1264;outlineOffset:4px;borderRadius:4px">Casos de éxito</a>
+      <a href="Blog.html" aria-current="page" style="color:#EC1264;textDecoration:none;fontSize:17px;fontWeight:600">Blog</a>
+      <a href="Sobre-Nosotros.html" style="color:#0B1B2C;textDecoration:none;fontSize:17px;fontWeight:500" style-hover="color:#EC1264" style-focus="outline:3px solid #EC1264;outlineOffset:4px;borderRadius:4px">Sobre nosotros</a>
+      <a href="Contacto.html" style="color:#0B1B2C;textDecoration:none;fontSize:17px;fontWeight:500" style-hover="color:#EC1264" style-focus="outline:3px solid #EC1264;outlineOffset:4px;borderRadius:4px">Contacto</a>
+    </nav>
+    <a href="Landing-Diagnostico.html" style="background:#EC1264;color:#FFFFFF;textDecoration:none;fontSize:14px;fontWeight:600;padding:10px 20px;borderRadius:999px;whiteSpace:nowrap;marginLeft:auto" style-hover="background:#c90e56" style-focus="outline:3px solid #0B1B2C;outlineOffset:3px">Reserva tu diagnóstico</a>
+  </header>
+
+  <main id="main-content">
+    <nav aria-label="Migas de pan" style="padding:20px clamp(20px,5vw,64px) 0;maxWidth:1200px;margin:0 auto">
+      <a href="index.html" style="color:#5B6B7C;textDecoration:none;fontSize:14px" style-hover="color:#EC1264" style-focus="outline:3px solid #EC1264;outlineOffset:3px">Inicio</a>
+      <span style="color:#B7C0CA;fontSize:14px;margin:0 8px">/</span>
+      <span style="color:#0B1B2C;fontSize:17px;fontWeight:600">Blog</span>
+    </nav>
+
+    <section aria-labelledby="blog-h1" style="padding:clamp(32px,5vw,56px) clamp(20px,5vw,64px) clamp(40px,5vw,56px);maxWidth:1200px;margin:0 auto;display:flex;flexDirection:column;gap:20px">
+      <p style="margin:0;fontSize:14px;fontWeight:700;letterSpacing:0.08em;textTransform:uppercase;color:#EC1264">Blog</p>
+      <h1 id="blog-h1" style="margin:0;fontFamily:Poppins,sans-serif;fontWeight:700;fontSize:clamp(32px,4.6vw,52px);lineHeight:1.12;color:#0B1B2C;maxWidth:22ch">Ideas claras sobre marketing, sin ruido.</h1>
+      <p style="margin:0;fontSize:clamp(17px,2vw,20px);lineHeight:1.6;color:#3E4C5C;maxWidth:60ch">Guías, casos y reflexiones sobre social media, IA, automatización y branding, explicadas de forma sencilla.</p>
+    </section>
+
+    <section aria-label="Buscador y categorías" style="padding:0 clamp(20px,5vw,64px) clamp(24px,3vw,32px);maxWidth:1200px;margin:0 auto;display:flex;flexDirection:column;gap:20px">
+      <div style="position:relative;maxWidth:440px">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#8A96A3" stroke-width="2" aria-hidden="true" style="position:absolute;left:16px;top:50%;transform:translateY(-50%)"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+        <label for="blog-search" style="position:absolute;left:-9999px">Buscar artículos</label>
+        <input id="blog-search" type="text" value="{{ searchQuery }}" onChange="{{ onSearchChange }}" placeholder="Buscar artículos..." style="width:100%;boxSizing:border-box;padding:12px 16px 12px 44px;borderRadius:999px;border:1px solid #EAEEF3;fontSize:15px;fontFamily:Inter,sans-serif;color:#0B1B2C;background:#FFFFFF" style-focus="outline:3px solid #EC1264;outlineOffset:2px"/>
+      </div>
+      <div style="display:flex;flexWrap:wrap;gap:12px">
+        <sc-for list="{{ categories }}" as="cat" hint-placeholder-count="5">
+          <button type="button" onClick="{{ cat.onClick }}" style="background:{{ cat.bg }};color:{{ cat.color }};fontSize:14px;fontWeight:600;padding:8px 18px;borderRadius:999px;border:none;cursor:pointer;fontFamily:Inter,sans-serif" style-focus="outline:3px solid #EC1264;outlineOffset:2px">{{ cat.label }}</button>
+        </sc-for>
+      </div>
+    </section>
+
+    <!-- POST DESTACADO -->
+    <sc-if value="{{ showFeatured }}" hint-placeholder-val="{{ true }}">
+      <section aria-label="Artículo destacado" style="padding:clamp(24px,3vw,32px) clamp(20px,5vw,64px) clamp(48px,6vw,72px);maxWidth:1200px;margin:0 auto">
+        <div style="display:grid;gridTemplateColumns:1.1fr 1fr;gap:40px;alignItems:center;border:1px solid #EAEEF3;borderRadius:24px;padding:32px;boxShadow:0 3px 16px rgba(11,27,44,0.07)">
+          <a href="Articulo.html" style="textDecoration:none;color:inherit;display:flex;flexDirection:column;gap:14px" style-focus="outline:3px solid #EC1264;outlineOffset:3px;borderRadius:8px">
+            <span style="fontSize:13px;fontWeight:700;letterSpacing:0.06em;textTransform:uppercase;color:#EC1264">SEO y GEO</span>
+            <h2 style="margin:0;fontFamily:Poppins,sans-serif;fontWeight:700;fontSize:clamp(24px,2.8vw,32px);lineHeight:1.25;color:#0B1B2C">Qué es el GEO y por qué tu marca necesita que ChatGPT te mencione</h2>
+            <p style="margin:0;fontSize:16px;lineHeight:1.6;color:#5B6B7C">Tus clientes ya preguntan a la IA antes de buscar en Google. Te contamos qué es la optimización para motores generativos (GEO) y cómo empezar a trabajarla.</p>
+            <p style="margin:0;fontSize:14px;color:#8A96A3">Gema Minayo · <time datetime="2026-07-10">10 de julio de 2026</time> · 6 min de lectura</p>
+          </a>
+          <image-slot id="foto-post-destacado" shape="rounded" radius="20" placeholder="Imagen del artículo destacado" style="width:100%;aspectRatio:4/3"></image-slot>
+        </div>
+      </section>
+    </sc-if>
+
+    <!-- GRID DE POSTS -->
+    <section aria-label="Últimos artículos" style="padding:0 clamp(20px,5vw,64px) clamp(64px,8vw,96px);maxWidth:1200px;margin:0 auto">
+      <sc-if value="{{ hasResults }}" hint-placeholder-val="{{ true }}">
+        <div style="display:grid;gridTemplateColumns:repeat(auto-fit,minmax(280px,1fr));gap:28px">
+          <sc-for list="{{ filteredPosts }}" as="post" hint-placeholder-count="6">
+            <div style="display:flex;flexDirection:column;gap:16px">
+              <image-slot id="{{ post.imgId }}" shape="rounded" radius="16" placeholder="Imagen del artículo" style="width:100%;aspectRatio:4/3"></image-slot>
+              <a href="{{ post.href }}" style="textDecoration:none;color:inherit;display:flex;flexDirection:column;gap:8px" style-focus="outline:3px solid #EC1264;outlineOffset:3px;borderRadius:8px">
+                <span style="fontSize:12px;fontWeight:700;letterSpacing:0.06em;textTransform:uppercase;color:{{ post.catColor }}">{{ post.category }}</span>
+                <h3 style="margin:0;fontFamily:Poppins,sans-serif;fontWeight:600;fontSize:19px;lineHeight:1.3;color:#0B1B2C">{{ post.title }}</h3>
+                <p style="margin:0;fontSize:14px;color:#8A96A3"><time datetime="{{ post.isoDate }}">{{ post.date }}</time> · {{ post.readTime }}</p>
+              </a>
+            </div>
+          </sc-for>
+        </div>
+      </sc-if>
+      <sc-if value="{{ hasNoResults }}" hint-placeholder-val="{{ false }}">
+        <p style="margin:0;fontSize:16px;color:#5B6B7C;textAlign:center;padding:40px 0">No hay artículos que coincidan con tu búsqueda.</p>
+      </sc-if>
+    </section>
+
+    <section aria-labelledby="cta-h2" style="background:#0B1B2C;padding:clamp(56px,8vw,90px) clamp(20px,5vw,64px);textAlign:center">
+      <div style="maxWidth:700px;margin:0 auto;display:flex;flexDirection:column;gap:28px;alignItems:center">
+        <h2 id="cta-h2" style="margin:0;fontFamily:Poppins,sans-serif;fontWeight:700;fontSize:clamp(26px,3.6vw,38px);lineHeight:1.3;color:#FFFFFF;textWrap:pretty">Tu marca no necesita más servicios. Necesita la estrategia adecuada.</h2>
+        <p style="margin:0;fontSize:17px;lineHeight:1.6;color:#B7C0CA;maxWidth:56ch;textWrap:pretty">Elige por dónde empezar. Nosotros conectaremos cada pieza para que todo trabaje hacia el mismo objetivo: hacer crecer tu negocio.</p>
+        <a href="Landing-Diagnostico.html" style="background:#EC1264;color:#FFFFFF;textDecoration:none;fontSize:16px;fontWeight:600;padding:16px 32px;borderRadius:999px" style-hover="background:#ff2f7f" style-focus="outline:3px solid #FFFFFF;outlineOffset:3px">Reserva tu diagnóstico</a>
+      </div>
+    </section>
+  </main>
+
+  <footer style="padding:clamp(48px,6vw,72px) clamp(20px,5vw,64px) 32px;background:#FFFFFF;borderTop:1px solid #EAEEF3">
+    <div style="maxWidth:1200px;margin:0 auto;display:grid;gridTemplateColumns:repeat(auto-fit,minmax(220px,1fr));gap:40px;marginBottom:40px">
+      <div style="display:flex;flexDirection:column;gap:14px">
+        <img src="logolockupnotag.png" alt="Gminayo" style="height:88px;width:auto;alignSelf:flex-start">
+        <p style="margin:0;fontFamily:Inter,sans-serif;fontWeight:500;fontSize:13px;color:#8A96A3">Marketing con sonrisa humana</p>
+      </div>
+      <nav aria-label="Mapa del sitio" style="display:flex;flexDirection:column;gap:10px">
+        <p style="margin:0 0 4px;fontSize:13px;fontWeight:700;letterSpacing:0.06em;textTransform:uppercase;color:#0B1B2C">Navegación</p>
+        <a href="Servicios.html" style="color:#5B6B7C;textDecoration:none;fontSize:14px" style-hover="color:#EC1264" style-focus="outline:3px solid #EC1264;outlineOffset:3px">Servicios</a>
+        <a href="Paquetes.html" style="color:#5B6B7C;textDecoration:none;fontSize:14px" style-hover="color:#EC1264" style-focus="outline:3px solid #EC1264;outlineOffset:3px">Paquetes</a>
+        <a href="Casos-de-Exito.html" style="color:#5B6B7C;textDecoration:none;fontSize:14px" style-hover="color:#EC1264" style-focus="outline:3px solid #EC1264;outlineOffset:3px">Casos de éxito</a>
+        <a href="Blog.html" style="color:#5B6B7C;textDecoration:none;fontSize:14px" style-hover="color:#EC1264" style-focus="outline:3px solid #EC1264;outlineOffset:3px">Blog</a>
+        <a href="Sobre-Nosotros.html" style="color:#5B6B7C;textDecoration:none;fontSize:14px" style-hover="color:#EC1264" style-focus="outline:3px solid #EC1264;outlineOffset:3px">Sobre nosotros</a>
+      </nav>
+      <div style="display:flex;flexDirection:column;gap:10px">
+        <p style="margin:0 0 4px;fontSize:13px;fontWeight:700;letterSpacing:0.06em;textTransform:uppercase;color:#0B1B2C">Contacto</p>
+        <p style="margin:0;fontSize:14px;color:#5B6B7C">Gema Minayo López</p>
+        <a href="mailto:gema@gminayo.com" style="color:#5B6B7C;textDecoration:none;fontSize:14px" style-hover="color:#EC1264" style-focus="outline:3px solid #EC1264;outlineOffset:3px">gema@gminayo.com</a>
+        <a href="tel:+34697540182" style="color:#5B6B7C;textDecoration:none;fontSize:14px" style-hover="color:#EC1264" style-focus="outline:3px solid #EC1264;outlineOffset:3px">+34 697 540 182</a>
+        <div style="display:flex;gap:10px;marginTop:6px">
+          <a href="https://www.linkedin.com/in/gemaminayolopez/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Gminayo" style="display:flex;alignItems:center;justifyContent:center;width:36px;height:36px;borderRadius:10px;background:#F4F7FB;color:#0B1B2C;textDecoration:none" style-hover="background:#EC1264;color:#FFFFFF" style-focus="outline:3px solid #EC1264;outlineOffset:3px"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="4" fill="none"/><path d="M7.2 9.5H4.6V19H7.2V9.5ZM5.9 8.3C6.8 8.3 7.4 7.7 7.4 6.9C7.4 6.1 6.8 5.5 5.9 5.5C5 5.5 4.4 6.1 4.4 6.9C4.4 7.7 5 8.3 5.9 8.3ZM19.6 19V13.6C19.6 10.8 18.1 9.5 16.1 9.5C14.5 9.5 13.7 10.4 13.3 11V9.5H10.7C10.7 9.5 10.8 11.1 10.7 19H13.3V13.7C13.3 13.4 13.3 13.1 13.4 12.9C13.7 12.2 14.3 11.5 15.3 11.5C16.6 11.5 17.1 12.5 17.1 13.9V19H19.6Z"/></svg></a>
+          <a href="https://www.instagram.com/gminayo_es/" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Gminayo" style="display:flex;alignItems:center;justifyContent:center;width:36px;height:36px;borderRadius:10px;background:#F4F7FB;color:#0B1B2C;textDecoration:none" style-hover="background:#EC1264;color:#FFFFFF" style-focus="outline:3px solid #EC1264;outlineOffset:3px"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg></a>
+        </div>
+      </div>
+      <div style="display:flex;flexDirection:column;gap:10px">
+        <p style="margin:0 0 4px;fontSize:13px;fontWeight:700;letterSpacing:0.06em;textTransform:uppercase;color:#0B1B2C">Legal</p>
+        <a href="Aviso-Legal.html" style="color:#5B6B7C;textDecoration:none;fontSize:14px" style-hover="color:#EC1264" style-focus="outline:3px solid #EC1264;outlineOffset:3px">Aviso legal</a>
+        <a href="Politica-Privacidad.html" style="color:#5B6B7C;textDecoration:none;fontSize:14px" style-hover="color:#EC1264" style-focus="outline:3px solid #EC1264;outlineOffset:3px">Política de privacidad</a>
+        <a href="Politica-Cookies.html" style="color:#5B6B7C;textDecoration:none;fontSize:14px" style-hover="color:#EC1264" style-focus="outline:3px solid #EC1264;outlineOffset:3px">Política de cookies</a>
+      </div>
+    </div>
+    <p style="margin:0;paddingTop:24px;borderTop:1px solid #EAEEF3;fontSize:13px;color:#8A96A3;maxWidth:1200px;marginLeft:auto;marginRight:auto">© 2026 Gminayo — Gema Minayo López. Todos los derechos reservados.</p>
+  </footer>
+
+  <sc-if value="{{ cookieVisible }}" hint-placeholder-val="{{ false }}">
+    <div role="dialog" aria-label="Consentimiento de cookies" style="position:fixed;left:0;right:0;bottom:0;zIndex:200;background:#0B1B2C;color:#FFFFFF;padding:20px clamp(20px,5vw,64px);display:flex;flexWrap:wrap;gap:16px 32px;alignItems:center;justifyContent:space-between;boxShadow:0 -4px 20px rgba(11,27,44,0.2)">
+      <p style="margin:0;fontSize:14px;lineHeight:1.5;maxWidth:60ch;color:#E6EAF0">Usamos cookies propias y de terceros para mejorar tu experiencia y medir el uso del sitio. Puedes aceptarlas o rechazarlas. Más información en nuestra <a href="Politica-Cookies.html" style="color:#FFFFFF;fontWeight:600" style-hover="color:#8FE3D6">Política de cookies</a>.</p>
+      <div style="display:flex;gap:12px;flexWrap:wrap">
+        <button type="button" onClick="{{ rejectCookies }}" style="background:transparent;color:#FFFFFF;border:1px solid #4A5A6B;borderRadius:999px;padding:10px 20px;fontSize:14px;fontWeight:600;cursor:pointer;fontFamily:Inter,sans-serif" style-hover="borderColor:#FFFFFF" style-focus="outline:3px solid #14B8A6;outlineOffset:2px">Rechazar</button>
+        <button type="button" onClick="{{ acceptCookies }}" style="background:#EC1264;color:#FFFFFF;border:none;borderRadius:999px;padding:10px 22px;fontSize:14px;fontWeight:600;cursor:pointer;fontFamily:Inter,sans-serif" style-hover="background:#c90e56" style-focus="outline:3px solid #FFFFFF;outlineOffset:2px">Aceptar</button>
+      </div>
+    </div>
+  </sc-if>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { cookieVisible: false, searchQuery: '', activeCategory: 'Todos' };
+
+  posts = [
+    { title: 'Qué es el GEO y por qué tu marca necesita que ChatGPT te mencione', category: 'SEO y GEO', catColor: '#EC1264', href: 'Articulo.html', imgId: 'foto-post-destacado', date: '10 de julio de 2026', isoDate: '2026-07-10', readTime: '6 min', featured: true },
+    { title: '3 señales de que tu calendario de contenido no está conectado con ventas', category: 'Social Media', catColor: '#14B8A6', href: 'Articulo-Calendario-Contenido.html', imgId: 'foto-post-1', date: '2 de julio de 2026', isoDate: '2026-07-02', readTime: '4 min' },
+    { title: 'Lead, MQL, SQL: qué significan y por qué deberían importarte', category: 'Automatización', catColor: '#EC1264', href: 'Articulo-Lead-MQL-SQL.html', imgId: 'foto-post-2', date: '24 de junio de 2026', isoDate: '2026-06-24', readTime: '5 min' },
+    { title: 'Cómo saber si tu marca necesita un refresco o un cambio de identidad', category: 'Branding', catColor: '#0B1B2C', href: 'Articulo-Refresco-Marca.html', imgId: 'foto-post-3', date: '15 de junio de 2026', isoDate: '2026-06-15', readTime: '4 min' },
+    { title: 'Vídeo corto con IA: qué puedes automatizar y qué necesita siempre a una persona', category: 'Social Media', catColor: '#14B8A6', href: 'Articulo-Video-IA.html', imgId: 'foto-post-4', date: '5 de junio de 2026', isoDate: '2026-06-05', readTime: '6 min' },
+    { title: 'Qué automatizar primero cuando tu equipo no llega a todo', category: 'Automatización', catColor: '#EC1264', href: 'Articulo-Automatizar-Primero.html', imgId: 'foto-post-5', date: '28 de mayo de 2026', isoDate: '2026-05-28', readTime: '5 min' },
+    { title: 'Marca personal: por dónde empezar si no sabes ni por dónde mirar', category: 'Branding', catColor: '#0B1B2C', href: 'Articulo-Marca-Personal.html', imgId: 'foto-post-6', date: '20 de mayo de 2026', isoDate: '2026-05-20', readTime: '5 min' },
+  ];
+
+  categoryList = ['Todos', 'Social Media', 'SEO y GEO', 'Automatización', 'Branding'];
+
+  componentDidMount() {
+    try {
+      const consent = localStorage.getItem('gminayo-cookie-consent');
+      if (!consent) this.setState({ cookieVisible: true });
+    } catch (e) {}
+  }
+
+  acceptCookies = () => {
+    try { localStorage.setItem('gminayo-cookie-consent', 'accepted'); } catch (e) {}
+    this.setState({ cookieVisible: false });
+  };
+
+  rejectCookies = () => {
+    try { localStorage.setItem('gminayo-cookie-consent', 'rejected'); } catch (e) {}
+    this.setState({ cookieVisible: false });
+  };
+
+  onSearchChange = (e) => {
+    this.setState({ searchQuery: e.target.value });
+  };
+
+  setCategory = (cat) => {
+    this.setState({ activeCategory: cat });
+  };
+
+  renderVals() {
+    const q = this.state.searchQuery.trim().toLowerCase();
+    const activeCat = this.state.activeCategory;
+
+    const matches = (post) => {
+      const matchesCat = activeCat === 'Todos' || post.category === activeCat;
+      const matchesQuery = !q || post.title.toLowerCase().includes(q) || post.category.toLowerCase().includes(q);
+      return matchesCat && matchesQuery;
+    };
+
+    const filtered = this.posts.filter(matches);
+    const showFeatured = !q && activeCat === 'Todos';
+    const filteredPosts = showFeatured ? filtered.filter(p => !p.featured) : filtered;
+
+    const categories = this.categoryList.map(cat => ({
+      label: cat,
+      onClick: () => this.setCategory(cat),
+      bg: cat === activeCat ? '#0B1B2C' : '#F4F7FB',
+      color: cat === activeCat ? '#FFFFFF' : '#3E4C5C',
+    }));
+
+    return {
+      cookieVisible: this.state.cookieVisible,
+      acceptCookies: this.acceptCookies,
+      rejectCookies: this.rejectCookies,
+      searchQuery: this.state.searchQuery,
+      onSearchChange: this.onSearchChange,
+      categories,
+      showFeatured,
+      filteredPosts,
+      hasResults: filteredPosts.length > 0,
+      hasNoResults: filteredPosts.length === 0,
+    };
+  }
+}
+
+</script>
+</body>
+</html>
