@@ -54,7 +54,8 @@
       <span style="color:#0B1B2C;fontSize:17px;fontWeight:600">Sobre nosotros</span>
     </nav>
 
-    <section aria-labelledby="sn-h1" style="padding:clamp(32px,5vw,56px) clamp(20px,5vw,64px) clamp(56px,7vw,88px);maxWidth:1200px;margin:0 auto;display:flex;flexDirection:column;gap:20px;textAlign:left">
+    <section aria-labelledby="sn-h1" style="padding:clamp(32px,5vw,56px) clamp(20px,5vw,64px) clamp(56px,7vw,88px);maxWidth:1200px;margin:0 auto;display:grid;gridTemplateColumns:1.1fr 1fr;gap:56px;alignItems:center">
+      <div style="display:flex;flexDirection:column;gap:20px;textAlign:left">
       <p style="margin:0;fontSize:14px;fontWeight:700;letterSpacing:0.08em;textTransform:uppercase;color:#EC1264">Sobre nosotros</p>
       <h1 id="sn-h1" style="margin:0;fontFamily:Poppins,sans-serif;fontWeight:700;fontSize:clamp(32px,4.4vw,50px);lineHeight:1.12;color:#0B1B2C;maxWidth:26ch">Estrategia para vender. Comunicación para permanecer.</h1>
       <p style="margin:0;fontSize:17px;lineHeight:1.65;color:#3E4C5C;maxWidth:70ch;textWrap:pretty">En un mundo lleno de ruido, las marcas que destacan no son las que más hablan.</p>
@@ -75,16 +76,18 @@
           <p style="margin:4px 0 0;fontSize:14px;color:#5B6B7C">Años creando</p>
         </div>
       </div>
+      </div>
+      <image-slot id="foto-hero-sobre-nosotros" shape="rounded" radius="24" placeholder="Foto del equipo" style="width:100%;aspectRatio:4/5" src="foto-hero-sobre-nosotros.jpg"></image-slot>
     </section>
 
     <section aria-label="Gema Minayo López" data-screen-label="Sobre nosotros — Gema" style="background:#F4F7FB;padding:clamp(48px,6vw,80px) clamp(20px,5vw,64px)">
       <div style="maxWidth:1200px;margin:0 auto;display:grid;gridTemplateColumns:minmax(280px,380px) 1fr;gap:56px;alignItems:start">
       <div style="width:100%;alignSelf:start;justifySelf:center;marginTop:110px;position:sticky;top:134px;display:flex;flexDirection:column;gap:20px">
         <div style="width:100%;height:280px">
-          <image-slot id="foto-gema-grande" shape="rounded" radius="24" placeholder="Foto de Gema Minayo" style="width:100%;height:100%"></image-slot>
+          <image-slot id="foto-gema-grande" shape="rounded" radius="24" placeholder="Foto de Gema Minayo" style="width:100%;height:100%" src="foto-gema-grande.jpg"></image-slot>
         </div>
         <div style="width:100%;height:280px">
-          <image-slot id="foto-gema-secundaria" shape="rounded" radius="24" placeholder="Segunda foto de Gema" style="width:100%;height:100%"></image-slot>
+          <image-slot id="foto-gema-secundaria" shape="rounded" radius="24" placeholder="Segunda foto de Gema" style="width:100%;height:100%" src="foto-gema-secundaria.jpg"></image-slot>
         </div>
       </div>
       <div style="display:flex;flexDirection:column;gap:20px">
@@ -134,7 +137,7 @@
           <p style="margin:0;fontFamily:Poppins,sans-serif;fontWeight:600;fontSize:clamp(20px,2.6vw,28px);lineHeight:1.5;color:#0B1B2C">Cada empresa tiene <span style="color:#EC1264">una historia</span>.<br>Cada emprendedor <span style="color:#EC1264">un sueño</span>.<br>Cada proyecto <span style="color:#EC1264">una razón para existir</span>.</p>
           <p style="margin:16px 0 0;fontSize:18px;lineHeight:1.6;color:#3E4C5C;textWrap:pretty">Nuestro trabajo es convertir todo eso en una marca que <strong style="color:#0B1B2C;fontWeight:700">emocione, conecte y genere resultados</strong>.</p>
         </div>
-        <image-slot id="foto-cierre-valores" shape="rounded" radius="24" placeholder="Foto de cierre" style="width:100%;aspectRatio:4/3"></image-slot>
+        <image-slot id="foto-cierre-valores" shape="rounded" radius="24" placeholder="Foto de cierre" style="width:100%;aspectRatio:4/3" src="foto-cierre-valores.jpg"></image-slot>
       </div>
     </section>
 

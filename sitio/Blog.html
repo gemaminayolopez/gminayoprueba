@@ -83,7 +83,7 @@
             <p style="margin:0;fontSize:16px;lineHeight:1.6;color:#5B6B7C">Tus clientes ya preguntan a la IA antes de buscar en Google. Te contamos qué es la optimización para motores generativos (GEO) y cómo empezar a trabajarla.</p>
             <p style="margin:0;fontSize:14px;color:#8A96A3">Gema Minayo · <time datetime="2026-07-10">10 de julio de 2026</time> · 6 min de lectura</p>
           </a>
-          <image-slot id="foto-post-destacado" shape="rounded" radius="20" placeholder="Imagen del artículo destacado" style="width:100%;aspectRatio:4/3"></image-slot>
+          <image-slot id="foto-post-destacado" shape="rounded" radius="20" placeholder="Imagen del artículo destacado" style="width:100%;aspectRatio:4/3" src="foto-articulo-cabecera.jpg"></image-slot>
         </div>
       </section>
     </sc-if>
@@ -94,7 +94,7 @@
         <div style="display:grid;gridTemplateColumns:repeat(auto-fit,minmax(280px,1fr));gap:28px">
           <sc-for list="{{ filteredPosts }}" as="post" hint-placeholder-count="6">
             <div style="display:flex;flexDirection:column;gap:16px">
-              <image-slot id="{{ post.imgId }}" shape="rounded" radius="16" placeholder="Imagen del artículo" style="width:100%;aspectRatio:4/3"></image-slot>
+              <image-slot id="{{ post.imgId }}" shape="rounded" radius="16" placeholder="Imagen del artículo" style="width:100%;aspectRatio:4/3" src="{{ post.img }}"></image-slot>
               <a href="{{ post.href }}" style="textDecoration:none;color:inherit;display:flex;flexDirection:column;gap:8px" style-focus="outline:3px solid #EC1264;outlineOffset:3px;borderRadius:8px">
                 <span style="fontSize:12px;fontWeight:700;letterSpacing:0.06em;textTransform:uppercase;color:{{ post.catColor }}">{{ post.category }}</span>
                 <h3 style="margin:0;fontFamily:Poppins,sans-serif;fontWeight:600;fontSize:19px;lineHeight:1.3;color:#0B1B2C">{{ post.title }}</h3>
@@ -171,12 +171,12 @@ class Component extends DCLogic {
 
   posts = [
     { title: 'Qué es el GEO y por qué tu marca necesita que ChatGPT te mencione', category: 'SEO y GEO', catColor: '#EC1264', href: 'Articulo.html', imgId: 'foto-post-destacado', date: '10 de julio de 2026', isoDate: '2026-07-10', readTime: '6 min', featured: true },
-    { title: '3 señales de que tu calendario de contenido no está conectado con ventas', category: 'Social Media', catColor: '#14B8A6', href: 'Articulo-Calendario-Contenido.html', imgId: 'foto-post-1', date: '2 de julio de 2026', isoDate: '2026-07-02', readTime: '4 min' },
-    { title: 'Lead, MQL, SQL: qué significan y por qué deberían importarte', category: 'Automatización', catColor: '#EC1264', href: 'Articulo-Lead-MQL-SQL.html', imgId: 'foto-post-2', date: '24 de junio de 2026', isoDate: '2026-06-24', readTime: '5 min' },
-    { title: 'Cómo saber si tu marca necesita un refresco o un cambio de identidad', category: 'Branding', catColor: '#0B1B2C', href: 'Articulo-Refresco-Marca.html', imgId: 'foto-post-3', date: '15 de junio de 2026', isoDate: '2026-06-15', readTime: '4 min' },
-    { title: 'Vídeo corto con IA: qué puedes automatizar y qué necesita siempre a una persona', category: 'Social Media', catColor: '#14B8A6', href: 'Articulo-Video-IA.html', imgId: 'foto-post-4', date: '5 de junio de 2026', isoDate: '2026-06-05', readTime: '6 min' },
-    { title: 'Qué automatizar primero cuando tu equipo no llega a todo', category: 'Automatización', catColor: '#EC1264', href: 'Articulo-Automatizar-Primero.html', imgId: 'foto-post-5', date: '28 de mayo de 2026', isoDate: '2026-05-28', readTime: '5 min' },
-    { title: 'Marca personal: por dónde empezar si no sabes ni por dónde mirar', category: 'Branding', catColor: '#0B1B2C', href: 'Articulo-Marca-Personal.html', imgId: 'foto-post-6', date: '20 de mayo de 2026', isoDate: '2026-05-20', readTime: '5 min' },
+    { title: '3 señales de que tu calendario de contenido no está conectado con ventas', category: 'Social Media', catColor: '#14B8A6', href: 'Articulo-Calendario-Contenido.html', imgId: 'foto-post-1', img: 'foto-articulo-calendario.jpg', date: '2 de julio de 2026', isoDate: '2026-07-02', readTime: '4 min' },
+    { title: 'Lead, MQL, SQL: qué significan y por qué deberían importarte', category: 'Automatización', catColor: '#EC1264', href: 'Articulo-Lead-MQL-SQL.html', imgId: 'foto-post-2', img: 'foto-articulo-lead.jpg', date: '24 de junio de 2026', isoDate: '2026-06-24', readTime: '5 min' },
+    { title: 'Cómo saber si tu marca necesita un refresco o un cambio de identidad', category: 'Branding', catColor: '#0B1B2C', href: 'Articulo-Refresco-Marca.html', imgId: 'foto-post-3', img: 'foto-articulo-refresco.jpg', date: '15 de junio de 2026', isoDate: '2026-06-15', readTime: '4 min' },
+    { title: 'Vídeo corto con IA: qué puedes automatizar y qué necesita siempre a una persona', category: 'Social Media', catColor: '#14B8A6', href: 'Articulo-Video-IA.html', imgId: 'foto-post-4', img: 'foto-articulo-video.jpg', date: '5 de junio de 2026', isoDate: '2026-06-05', readTime: '6 min' },
+    { title: 'Qué automatizar primero cuando tu equipo no llega a todo', category: 'Automatización', catColor: '#EC1264', href: 'Articulo-Automatizar-Primero.html', imgId: 'foto-post-5', img: 'foto-articulo-automatizar.jpg', date: '28 de mayo de 2026', isoDate: '2026-05-28', readTime: '5 min' },
+    { title: 'Marca personal: por dónde empezar si no sabes ni por dónde mirar', category: 'Branding', catColor: '#0B1B2C', href: 'Articulo-Marca-Personal.html', imgId: 'foto-post-6', img: 'foto-articulo-personal.jpg', date: '20 de mayo de 2026', isoDate: '2026-05-20', readTime: '5 min' },
   ];
 
   categoryList = ['Todos', 'Social Media', 'SEO y GEO', 'Automatización', 'Branding'];

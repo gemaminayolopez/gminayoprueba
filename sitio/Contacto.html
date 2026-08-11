@@ -104,7 +104,11 @@
               <input type="checkbox" required="" checked="{{ privacyChecked }}" onChange="{{ onPrivacyChange }}" style="marginTop:3px;width:18px;height:18px">
               He leído y acepto la <a href="Politica-Privacidad.html" style="color:#0B1B2C;fontWeight:600" style-hover="color:#EC1264">política de privacidad</a>.
             </label>
-            <button type="submit" style="background:#EC1264;color:#FFFFFF;border:none;fontSize:16px;fontWeight:600;padding:16px 28px;borderRadius:999px;cursor:pointer;alignSelf:flex-start" style-hover="background:#c90e56" style-focus="outline:3px solid #0B1B2C;outlineOffset:3px">Enviar mensaje</button>
+            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;width:1px;height:1px" aria-hidden="true">
+            <sc-if value="{{ sendError }}" hint-placeholder-val="{{ false }}">
+              <p role="alert" style="margin:0;fontSize:14px;color:#C81E4E">No se ha podido enviar el mensaje. Prueba de nuevo o escríbenos directamente a <a href="mailto:gema@gminayo.com" style="color:#C81E4E;fontWeight:600">gema@gminayo.com</a>.</p>
+            </sc-if>
+            <button type="submit" disabled="{{ sending }}" style="background:#EC1264;color:#FFFFFF;border:none;fontSize:16px;fontWeight:600;padding:16px 28px;borderRadius:999px;cursor:pointer;alignSelf:flex-start;opacity:1" style-hover="background:#c90e56" style-focus="outline:3px solid #0B1B2C;outlineOffset:3px">{{ submitLabel }}</button>
           </form>
         </sc-if>
       </div>
@@ -179,6 +183,8 @@ class Component extends DCLogic {
     nombre: '', empresa: '', telefono: '', ciudad: '', email: '', mensaje: '',
     privacyChecked: false,
     submitted: false,
+    sending: false,
+    sendError: false,
     touched: false,
     cookieVisible: false,
   };
@@ -215,10 +221,35 @@ class Component extends DCLogic {
   handleSubmit = (e) => {
     e.preventDefault();
     this.setState({ touched: true });
-    const { nombre, email, mensaje, privacyChecked } = this.state;
-    if (nombre.trim() && this.isEmailValid(email) && mensaje.trim() && privacyChecked) {
-      this.setState({ submitted: true });
+    const { nombre, empresa, telefono, ciudad, email, mensaje, privacyChecked } = this.state;
+    if (!(nombre.trim() && this.isEmailValid(email) && mensaje.trim() && privacyChecked)) {
+      return;
     }
+    this.setState({ sending: true, sendError: false });
+
+    const gotchaField = e.target.querySelector('[name="_gotcha"]');
+    const _gotcha = gotchaField ? gotchaField.value : '';
+
+    // Endpoint del script PHP alojado en tu servidor de IONOS. Cámbialo si en
+    // algún momento mueves el script a otra ruta o dominio.
+    const ENDPOINT = 'https://myblog-572v7zgniq.live-website.com/contacto.php';
+
+    fetch(ENDPOINT, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ nombre, empresa, telefono, ciudad, email, mensaje, _gotcha }),
+    })
+      .then((res) => res.json().catch(() => ({ ok: false })))
+      .then((data) => {
+        if (data && data.ok) {
+          this.setState({ submitted: true, sending: false });
+        } else {
+          this.setState({ sending: false, sendError: true });
+        }
+      })
+      .catch(() => {
+        this.setState({ sending: false, sendError: true });
+      });
   };
 
   renderVals() {
@@ -233,6 +264,9 @@ class Component extends DCLogic {
       privacyChecked: s.privacyChecked,
       submitted: s.submitted,
       notSubmitted: !s.submitted,
+      sending: s.sending,
+      sendError: s.sendError,
+      submitLabel: s.sending ? 'Enviando…' : 'Enviar mensaje',
       nombreError: s.touched && !s.nombre.trim(),
       emailError: s.touched && !this.isEmailValid(s.email),
       mensajeError: s.touched && !s.mensaje.trim(),
