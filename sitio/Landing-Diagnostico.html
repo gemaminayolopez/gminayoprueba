@@ -211,6 +211,38 @@ class Component extends DCLogic {
     }
   };
 
+3. Sustitúyelo por esto:
+
+javascript
+  handleSubmit = (e) => {
+    e.preventDefault();
+    this.setState({ touched: true });
+    const { nombre, empresa, email, telefono, privacyChecked } = this.state;
+    if (nombre.trim() && this.isEmailValid(email) && telefono.trim() && privacyChecked) {
+      fetch('https://myblog-572v7zgniq.live-website.com/contacto.php', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams({
+          nombre,
+          empresa,
+          telefono,
+          email,
+          mensaje: 'Solicitud de reserva: Estrategia 1:1 - Crear el mapa de tu marca (155€, pago único).',
+        }).toString(),
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          if (data.ok) {
+            this.setState({ submitted: true });
+          } else {
+            alert('No se pudo enviar la reserva. Inténtalo de nuevo o escríbenos a gema@gminayo.com.');
+          }
+        })
+        .catch(() => {
+          alert('No se pudo enviar la reserva. Inténtalo de nuevo o escríbenos a gema@gminayo.com.');
+        });
+    }
+  };
   renderVals() {
     const s = this.state;
     return {
