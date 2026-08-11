@@ -208,7 +208,7 @@ class Component extends DCLogic {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
   }
 
-  handleSubmit = (e) => {
+ handleSubmit = (e) => {
     e.preventDefault();
     this.setState({ touched: true });
     const { nombre, empresa, email, telefono, privacyChecked } = this.state;
@@ -219,14 +219,14 @@ class Component extends DCLogic {
 
     const gotchaField = e.target.querySelector('[name="_gotcha"]');
     const _gotcha = gotchaField ? gotchaField.value : '';
-    const mensaje = 'Solicitud de reserva de la sesión de diagnóstico (155€) desde la landing page.';
+    const mensaje = 'Solicitud de reserva: Estrategia 1:1 - Crear el mapa de tu marca (155€, pago único).';
 
     const ENDPOINT = 'https://myblog-572v7zgniq.live-website.com/contacto.php';
 
     fetch(ENDPOINT, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ nombre, empresa, telefono, email, mensaje, _gotcha }),
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams({ nombre, empresa, telefono, email, mensaje, _gotcha }).toString(),
     })
       .then((res) => res.json().catch(() => ({ ok: false })))
       .then((data) => {
@@ -240,7 +240,6 @@ class Component extends DCLogic {
         this.setState({ sending: false, sendError: true });
       });
   };
-
   renderVals() {
     const s = this.state;
     return {
