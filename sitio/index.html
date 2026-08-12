@@ -63,9 +63,23 @@
       </div>
     </section>
 
-    <!-- HERO PHOTO -->
-    <section aria-label="Foto destacada" style="width:100%;marginTop:clamp(40px,6vw,64px)">
-      <image-slot id="foto-hero" shape="rect" radius="0" placeholder="Foto de Gema o del equipo" style="width:100%;aspectRatio:16/9" src="foto-hero.jpg"></image-slot>
+    <!-- HERO -->
+    <section aria-labelledby="hero-h1" data-screen-label="Home — Hero" style="position:relative;minHeight:min(88vh,760px);display:flex;alignItems:center;overflow:hidden">
+      <div style="position:absolute;inset:0;width:100%;height:100%">
+        <image-slot id="foto-hero" shape="rect" radius="0" placeholder="Foto de Gema o del equipo" fit="cover" style="width:100%;height:100%" src="foto-hero.jpg"></image-slot>
+      </div>
+      <div style="position:absolute;inset:0;background:linear-gradient(90deg,#FFFFFF 0%,rgba(255,255,255,0.88) 38%,rgba(255,255,255,0) 68%);pointer-events:none"></div>
+      <div style="position:relative;zIndex:1;padding:clamp(40px,6vw,64px) clamp(20px,5vw,64px);maxWidth:1200px;margin:0 auto;width:100%">
+        <div style="display:flex;flexDirection:column;gap:24px;maxWidth:520px">
+          <p style="margin:0;fontSize:14px;fontWeight:700;letterSpacing:0.08em;textTransform:uppercase;color:#EC1264">Consultora de marketing y social media</p>
+          <h1 id="hero-h1" style="margin:0;fontFamily:Poppins,sans-serif;fontWeight:700;fontSize:clamp(36px,5.4vw,64px);lineHeight:1.08;color:#0B1B2C">Marketing con sonrisa humana.</h1>
+          <p style="margin:0;fontSize:clamp(18px,2.2vw,24px);lineHeight:1.5;color:#3E4C5C;maxWidth:34ch">Conectamos personas. Impulsamos marcas. Generamos negocio.</p>
+          <div style="display:flex;flexWrap:wrap;gap:14px 24px;alignItems:center;marginTop:8px">
+            <a href="Landing-Diagnostico.html" style="background:#0B1B2C;color:#FFFFFF;textDecoration:none;fontSize:16px;fontWeight:600;padding:16px 30px;borderRadius:999px" style-hover="background:#16304a" style-focus="outline:3px solid #EC1264;outlineOffset:3px">Reserva tu diagnóstico</a>
+            <a href="Servicios.html" style="color:#0B1B2C;textDecoration:underline;textUnderlineOffset:4px;fontSize:16px;fontWeight:600" style-hover="color:#EC1264" style-focus="outline:3px solid #EC1264;outlineOffset:3px;borderRadius:4px">Ver todos los servicios →</a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section aria-label="Cifras" style="padding:clamp(40px,6vw,64px) clamp(20px,5vw,64px) clamp(56px,7vw,88px);maxWidth:1200px;margin:0 auto">
