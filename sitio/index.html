@@ -23,6 +23,10 @@
     body { margin: 0; background: #FFFFFF; }
     ::selection { background: #EC1264; color: #FFFFFF; }
     @keyframes gm-fade-up { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+    @media (max-width: 640px) {
+      .gm-header-nav { margin-left: 0 !important; gap: 10px 16px !important; }
+      .gm-quienes-grid { grid-template-columns: 1fr !important; }
+    }
   </style>
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"Organization","name":"Gminayo","url":"https://www.gminayo.com","description":"Marketing con sonrisa humana, al servicio de las ventas y el revenue de tu empresa.","founder":{"@type":"Person","name":"Gema Minayo López"},"email":"gema@gminayo.com","telephone":"+34697540182","sameAs":["https://www.linkedin.com/in/gemaminayolopez","https://www.instagram.com/gminayo_es"]}
@@ -37,7 +41,7 @@
     <a href="index.html" aria-label="Gminayo, inicio" style="display:flex;alignItems:center;gap:10px;textDecoration:none" style-focus="outline:3px solid #EC1264;outlineOffset:4px;borderRadius:8px">
       <img src="logolockupnotag.png" alt="Gminayo" style="height:76px;width:auto;display:block">
     </a>
-    <nav aria-label="Navegación principal" style="display:flex;alignItems:center;flexWrap:wrap;gap:6px 16px;marginLeft:115px">
+    <nav aria-label="Navegación principal" class="gm-header-nav" style="display:flex;alignItems:center;flexWrap:wrap;gap:6px 16px;marginLeft:115px">
       <a href="Servicios.html" style="color:#0B1B2C;textDecoration:none;fontSize:17px;fontWeight:500" style-hover="color:#EC1264" style-focus="outline:3px solid #EC1264;outlineOffset:4px;borderRadius:4px">Servicios</a>
       <a href="Paquetes.html" style="color:#0B1B2C;textDecoration:none;fontSize:17px;fontWeight:500" style-hover="color:#EC1264" style-focus="outline:3px solid #EC1264;outlineOffset:4px;borderRadius:4px">Paquetes</a>
       <a href="Casos-de-Exito.html" style="color:#0B1B2C;textDecoration:none;fontSize:17px;fontWeight:500" style-hover="color:#EC1264" style-focus="outline:3px solid #EC1264;outlineOffset:4px;borderRadius:4px">Casos de éxito</a>
@@ -83,7 +87,7 @@
 
     <!-- QUIÉNES SOMOS -->
     <section aria-labelledby="quienes-h2" data-screen-label="Home — Quiénes somos" style="background:#F4F7FB;padding:clamp(56px,7vw,96px) clamp(20px,5vw,64px)">
-      <div style="maxWidth:1200px;margin:0 auto;display:grid;gridTemplateColumns:minmax(260px,380px) 1fr;gap:56px;alignItems:start">
+      <div class="gm-quienes-grid" style="maxWidth:1200px;margin:0 auto;display:grid;gridTemplateColumns:minmax(260px,380px) 1fr;gap:56px;alignItems:start">
         <image-slot id="foto-gema" shape="rounded" radius="24" placeholder="Foto de Gema Minayo" style="width:100%;aspectRatio:4/5" src="foto-gema.jpg"></image-slot>
         <div style="display:flex;flexDirection:column;gap:20px">
           <p style="margin:0;fontSize:14px;fontWeight:700;letterSpacing:0.08em;textTransform:uppercase;color:#EC1264">Quiénes somos</p>
