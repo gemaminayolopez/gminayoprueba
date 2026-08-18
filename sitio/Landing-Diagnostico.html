@@ -22,6 +22,10 @@
     body { margin: 0; background: #FFFFFF; }
     ::selection { background: #EC1264; color: #FFFFFF; }
     input:focus-visible, textarea:focus-visible { outline: 3px solid #EC1264; outline-offset: 2px; }
+    @media (max-width: 640px) {
+      .gm-ld-grid { grid-template-columns: 1fr !important; }
+      .gm-ld-form { position: static !important; margin-top: 24px !important; }
+    }
   </style>
 </helmet>
 
@@ -37,7 +41,7 @@
   </header>
 
   <main id="main-content">
-    <section aria-labelledby="ld-h1" style="padding:clamp(40px,6vw,72px) clamp(20px,5vw,64px);maxWidth:1200px;margin:0 auto;display:grid;gridTemplateColumns:1.1fr 1fr;gap:56px;alignItems:start">
+    <section aria-labelledby="ld-h1" class="gm-ld-grid" style="padding:clamp(40px,6vw,72px) clamp(20px,5vw,64px);maxWidth:1200px;margin:0 auto;display:grid;gridTemplateColumns:1.1fr 1fr;gap:56px;alignItems:start">
 
       <div style="display:flex;flexDirection:column;gap:24px">
         <p style="margin:0;fontSize:14px;fontWeight:700;letterSpacing:0.08em;textTransform:uppercase;color:#EC1264">Estrategia 1:1</p>
@@ -72,7 +76,7 @@
         </div>
       </div>
 
-      <div style="background:#F4F7FB;borderRadius:24px;padding:36px;position:sticky;top:80px;marginTop:40px;boxShadow:0 3px 16px rgba(11,27,44,0.07)">
+      <div class="gm-ld-form" style="background:#F4F7FB;borderRadius:24px;padding:36px;position:sticky;top:80px;marginTop:40px;boxShadow:0 3px 16px rgba(11,27,44,0.07)">
         <sc-if value="{{ submitted }}" hint-placeholder-val="{{ false }}">
           <div role="status" style="display:flex;flexDirection:column;gap:10px">
             <h2 style="margin:0;fontFamily:Poppins,sans-serif;fontWeight:600;fontSize:22px;color:#0B1B2C">¡Reserva recibida!</h2>
