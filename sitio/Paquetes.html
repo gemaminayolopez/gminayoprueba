@@ -18,9 +18,15 @@
   <link rel="stylesheet" href="./tokens.css">
   <link rel="stylesheet" href="./vendor/fonts/fonts.css">
   <meta name="description" content="Paquetes de Social Media de Gminayo: Presencia, Conversión, Crecimiento y Estrategia 1:1. Precios y qué incluye cada uno.">
-  <style>
+   <style>
     body { margin: 0; background: #FFFFFF; }
     ::selection { background: #EC1264; color: #FFFFFF; }
+    @media (max-width: 640px) {
+      .gm-header-nav { margin-left: 0 !important; gap: 10px 16px !important; }
+      .gm-plan-card { grid-template-columns: 1fr !important; }
+      .gm-plan-price { align-items: flex-start !important; }
+      .gm-plan-price p, .gm-plan-price a { margin-left: 0 !important; }
+    }
   </style>
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://www.gminayo.com/"},{"@type":"ListItem","position":2,"name":"Paquetes","item":"https://www.gminayo.com/paquetes"}]}
@@ -35,7 +41,7 @@
     <a href="index.html" aria-label="Gminayo, inicio" style="display:flex;alignItems:center;gap:10px;textDecoration:none" style-focus="outline:3px solid #EC1264;outlineOffset:4px;borderRadius:8px">
       <img src="logolockupnotag.png" alt="Gminayo" style="height:76px;width:auto;display:block">
     </a>
-    <nav aria-label="Navegación principal" style="display:flex;alignItems:center;flexWrap:wrap;gap:6px 16px;marginLeft:115px">
+    <nav aria-label="Navegación principal" class="gm-header-nav" style="display:flex;alignItems:center;flexWrap:wrap;gap:6px 16px;marginLeft:115px">
       <a href="Servicios.html" style="color:#0B1B2C;textDecoration:none;fontSize:17px;fontWeight:500" style-hover="color:#EC1264" style-focus="outline:3px solid #EC1264;outlineOffset:4px;borderRadius:4px">Servicios</a>
       <a href="Paquetes.html" aria-current="page" style="color:#EC1264;textDecoration:none;fontSize:17px;fontWeight:600">Paquetes</a>
       <a href="Casos-de-Exito.html" style="color:#0B1B2C;textDecoration:none;fontSize:17px;fontWeight:500" style-hover="color:#EC1264" style-focus="outline:3px solid #EC1264;outlineOffset:4px;borderRadius:4px">Casos de éxito</a>
@@ -94,7 +100,7 @@
       <p style="margin:0 0 24px;fontSize:14px;fontWeight:700;letterSpacing:0.08em;textTransform:uppercase;color:#5B6B7C">El detalle de cada paquete</p>
       <div style="display:flex;flexDirection:column;gap:24px">
 
-        <div style="border:1px solid #EAEEF3;borderRadius:24px;padding:clamp(28px,4vw,40px);display:grid;gridTemplateColumns:1fr auto;gap:32px;alignItems:start;boxShadow:0 3px 16px rgba(11,27,44,0.07)">
+        <div class="gm-plan-card" style="border:1px solid #EAEEF3;borderRadius:24px;padding:clamp(28px,4vw,40px);display:grid;gridTemplateColumns:1fr auto;gap:32px;alignItems:start;boxShadow:0 3px 16px rgba(11,27,44,0.07)">
           <div style="display:flex;flexDirection:column;gap:14px">
             <p style="margin:0;fontSize:13px;fontWeight:700;letterSpacing:0.08em;textTransform:uppercase;color:#EC1264">Presencia — El arranque digital</p>
             <ul style="margin:0;padding:0;listStyle:none;display:flex;flexDirection:column;gap:10px">
@@ -104,14 +110,14 @@
               <li style="display:flex;gap:10px;fontSize:15px;lineHeight:1.5;color:#3E4C5C"><span aria-hidden="true" style="color:#14B8A6;fontWeight:700">✓</span>1 sesión estratégica mensual</li>
             </ul>
           </div>
-          <div style="textAlign:left;display:flex;flexDirection:column;gap:14px;alignItems:flex-start;minWidth:180px">
+          <div class="gm-plan-price" style="textAlign:left;display:flex;flexDirection:column;gap:14px;alignItems:flex-start;minWidth:180px">
             <p style="margin:0;fontFamily:Poppins,sans-serif;fontWeight:700;fontSize:36px;color:#0B1B2C;whiteSpace:nowrap;marginLeft:auto">455€<span style="fontSize:15px;fontWeight:500;color:#5B6B7C">/mes</span></p>
             <p style="margin:0;fontSize:12px;color:#8A96A3">Permanencia: 6 meses</p>
             <a href="Landing-Diagnostico.html" style="background:#F4F7FB;color:#0B1B2C;textDecoration:none;fontSize:14px;fontWeight:600;padding:12px 22px;borderRadius:999px;whiteSpace:nowrap;marginLeft:auto" style-hover="background:#e6ecf3" style-focus="outline:3px solid #EC1264;outlineOffset:3px">Empezar con Presencia</a>
           </div>
         </div>
 
-        <div style="border:2px solid #EC1264;borderRadius:24px;padding:clamp(28px,4vw,40px);display:grid;gridTemplateColumns:1fr auto;gap:32px;alignItems:start;position:relative;boxShadow:0 8px 28px rgba(236,18,100,0.16)">
+        <div class="gm-plan-card" style="border:2px solid #EC1264;borderRadius:24px;padding:clamp(28px,4vw,40px);display:grid;gridTemplateColumns:1fr auto;gap:32px;alignItems:start;position:relative;boxShadow:0 8px 28px rgba(236,18,100,0.16)">
           <p style="margin:0;position:absolute;top:-14px;left:clamp(28px,4vw,40px);background:#EC1264;color:#FFFFFF;fontSize:12px;fontWeight:700;letterSpacing:0.05em;textTransform:uppercase;padding:6px 14px;borderRadius:999px">Más elegido</p>
           <div style="display:flex;flexDirection:column;gap:14px">
             <p style="margin:0;fontSize:13px;fontWeight:700;letterSpacing:0.08em;textTransform:uppercase;color:#EC1264">Conversión — El imán de crecimiento</p>
@@ -122,14 +128,14 @@
               <li style="display:flex;gap:10px;fontSize:15px;lineHeight:1.5;color:#3E4C5C"><span aria-hidden="true" style="color:#14B8A6;fontWeight:700">✓</span>Segmentación (Lead, MQL, SQL) e informe avanzado de ventas</li>
             </ul>
           </div>
-          <div style="textAlign:left;display:flex;flexDirection:column;gap:14px;alignItems:flex-start;minWidth:180px">
+          <div class="gm-plan-price" style="textAlign:left;display:flex;flexDirection:column;gap:14px;alignItems:flex-start;minWidth:180px">
             <p style="margin:0;fontFamily:Poppins,sans-serif;fontWeight:700;fontSize:36px;color:#0B1B2C;whiteSpace:nowrap;marginLeft:auto">595€<span style="fontSize:15px;fontWeight:500;color:#5B6B7C">/mes</span></p>
             <p style="margin:0;fontSize:12px;color:#8A96A3">Permanencia: 6 meses</p>
             <a href="Landing-Diagnostico.html" style="background:#EC1264;color:#FFFFFF;textDecoration:none;fontSize:14px;fontWeight:600;padding:12px 22px;borderRadius:999px;whiteSpace:nowrap;marginLeft:auto" style-hover="background:#c90e56" style-focus="outline:3px solid #0B1B2C;outlineOffset:3px">Empezar con Conversión</a>
           </div>
         </div>
 
-        <div style="border:1px solid #EAEEF3;borderRadius:24px;padding:clamp(28px,4vw,40px);display:grid;gridTemplateColumns:1fr auto;gap:32px;alignItems:start;boxShadow:0 3px 16px rgba(11,27,44,0.07)">
+        <div class="gm-plan-card" style="border:1px solid #EAEEF3;borderRadius:24px;padding:clamp(28px,4vw,40px);display:grid;gridTemplateColumns:1fr auto;gap:32px;alignItems:start;boxShadow:0 3px 16px rgba(11,27,44,0.07)">
           <div style="display:flex;flexDirection:column;gap:14px">
             <p style="margin:0;fontSize:13px;fontWeight:700;letterSpacing:0.08em;textTransform:uppercase;color:#EC1264">Crecimiento — La máquina de ventas</p>
             <ul style="margin:0;padding:0;listStyle:none;display:flex;flexDirection:column;gap:10px">
@@ -139,7 +145,7 @@
               <li style="display:flex;gap:10px;fontSize:15px;lineHeight:1.5;color:#3E4C5C"><span aria-hidden="true" style="color:#14B8A6;fontWeight:700">✓</span>Estrategia SEO / Menciones en IA y 2 sesiones estratégicas mensuales</li>
             </ul>
           </div>
-          <div style="textAlign:left;display:flex;flexDirection:column;gap:14px;alignItems:flex-start;minWidth:180px">
+          <div class="gm-plan-price" style="textAlign:left;display:flex;flexDirection:column;gap:14px;alignItems:flex-start;minWidth:180px">
             <p style="margin:0;fontFamily:Poppins,sans-serif;fontWeight:700;fontSize:36px;color:#0B1B2C;whiteSpace:nowrap;marginLeft:auto">955€<span style="fontSize:15px;fontWeight:500;color:#5B6B7C">/mes</span></p>
             <p style="margin:0;fontSize:12px;color:#8A96A3">Permanencia: 6 meses</p>
             <a href="Landing-Diagnostico.html" style="background:#F4F7FB;color:#0B1B2C;textDecoration:none;fontSize:14px;fontWeight:600;padding:12px 22px;borderRadius:999px;whiteSpace:nowrap;marginLeft:auto" style-hover="background:#e6ecf3" style-focus="outline:3px solid #EC1264;outlineOffset:3px">Empezar con Crecimiento</a>
