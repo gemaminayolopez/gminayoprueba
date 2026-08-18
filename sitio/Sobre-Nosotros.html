@@ -22,6 +22,12 @@
   <style>
     body { margin: 0; background: #FFFFFF; }
     ::selection { background: #EC1264; color: #FFFFFF; }
+    @media (max-width: 640px) {
+      .gm-header-nav { margin-left: 0 !important; gap: 10px 16px !important; }
+      .gm-gema-grid { grid-template-columns: 1fr !important; }
+      .gm-gema-fotos { position: static !important; margin-top: 0 !important; }
+      .gm-valores-cierre { grid-template-columns: 1fr !important; }
+    }
   </style>
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"Person","name":"Gema Minayo López","jobTitle":"Fundadora & Consultora de Marketing","worksFor":{"@type":"Organization","name":"Gminayo"},"email":"gema@gminayo.com","sameAs":["https://www.linkedin.com/in/gemaminayolopez","https://www.instagram.com/gminayo_es"]}
@@ -36,7 +42,7 @@
     <a href="index.html" aria-label="Gminayo, inicio" style="display:flex;alignItems:center;gap:10px;textDecoration:none" style-focus="outline:3px solid #EC1264;outlineOffset:4px;borderRadius:8px">
       <img src="logolockupnotag.png" alt="Gminayo" style="height:76px;width:auto;display:block">
     </a>
-    <nav aria-label="Navegación principal" style="display:flex;alignItems:center;flexWrap:wrap;gap:6px 16px;marginLeft:115px">
+    <nav aria-label="Navegación principal" class="gm-header-nav" style="display:flex;alignItems:center;flexWrap:wrap;gap:6px 16px;marginLeft:115px">
       <a href="Servicios.html" style="color:#0B1B2C;textDecoration:none;fontSize:17px;fontWeight:500" style-hover="color:#EC1264" style-focus="outline:3px solid #EC1264;outlineOffset:4px;borderRadius:4px">Servicios</a>
       <a href="Paquetes.html" style="color:#0B1B2C;textDecoration:none;fontSize:17px;fontWeight:500" style-hover="color:#EC1264" style-focus="outline:3px solid #EC1264;outlineOffset:4px;borderRadius:4px">Paquetes</a>
       <a href="Casos-de-Exito.html" style="color:#0B1B2C;textDecoration:none;fontSize:17px;fontWeight:500" style-hover="color:#EC1264" style-focus="outline:3px solid #EC1264;outlineOffset:4px;borderRadius:4px">Casos de éxito</a>
@@ -85,8 +91,8 @@
     </section>
 
     <section aria-label="Gema Minayo López" data-screen-label="Sobre nosotros — Gema" style="background:#F4F7FB;padding:clamp(48px,6vw,80px) clamp(20px,5vw,64px)">
-      <div style="maxWidth:1200px;margin:0 auto;display:grid;gridTemplateColumns:minmax(280px,380px) 1fr;gap:56px;alignItems:start">
-      <div style="width:100%;alignSelf:start;justifySelf:center;marginTop:110px;position:sticky;top:134px;display:flex;flexDirection:column;gap:20px">
+      <div class="gm-gema-grid" style="maxWidth:1200px;margin:0 auto;display:grid;gridTemplateColumns:minmax(280px,380px) 1fr;gap:56px;alignItems:start">
+      <div class="gm-gema-fotos" style="width:100%;alignSelf:start;justifySelf:center;marginTop:110px;position:sticky;top:134px;display:flex;flexDirection:column;gap:20px">
         <div style="width:100%;height:280px">
           <image-slot id="foto-gema-grande" shape="rounded" radius="24" placeholder="Foto de Gema Minayo" style="width:100%;height:100%" src="foto-gema-grande.jpg"></image-slot>
         </div>
@@ -136,7 +142,7 @@
           <p style="margin:0;fontSize:15px;lineHeight:1.6;color:#5B6B7C">Automatizamos lo repetitivo para que tu gente se concentre en crear valor.</p>
         </div>
       </div>
-      <div style="maxWidth:1200px;margin:48px auto 0;paddingTop:40px;borderTop:1px solid #EAEEF3;display:grid;gridTemplateColumns:1fr minmax(220px,340px);gap:48px;alignItems:center">
+      <div class="gm-valores-cierre" style="maxWidth:1200px;margin:48px auto 0;paddingTop:40px;borderTop:1px solid #EAEEF3;display:grid;gridTemplateColumns:1fr minmax(220px,340px);gap:48px;alignItems:center">
         <div style="display:flex;flexDirection:column;gap:10px">
           <p style="margin:0;fontFamily:Poppins,sans-serif;fontWeight:600;fontSize:clamp(20px,2.6vw,28px);lineHeight:1.5;color:#0B1B2C">Cada empresa tiene <span style="color:#EC1264">una historia</span>.<br>Cada emprendedor <span style="color:#EC1264">un sueño</span>.<br>Cada proyecto <span style="color:#EC1264">una razón para existir</span>.</p>
           <p style="margin:16px 0 0;fontSize:18px;lineHeight:1.6;color:#3E4C5C;textWrap:pretty">Nuestro trabajo es convertir todo eso en una marca que <strong style="color:#0B1B2C;fontWeight:700">emocione, conecte y genere resultados</strong>.</p>
