@@ -23,6 +23,8 @@
     body { margin: 0; background: #FFFFFF; }
     ::selection { background: #EC1264; color: #FFFFFF; }
     @keyframes gm-fade-up { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+ .gm-reveal { opacity: 0; transform: translateY(28px); transition: opacity .7s ease, transform .7s ease; }
+    .gm-reveal.gm-visible { opacity: 1; transform: translateY(0); }
     @media (max-width: 640px) {
       .gm-header-nav { margin-left: 0 !important; gap: 10px 16px !important; }
       .gm-quienes-grid { grid-template-columns: 1fr !important; }
@@ -110,7 +112,7 @@
         <p style="margin:0;fontSize:14px;fontWeight:700;letterSpacing:0.08em;textTransform:uppercase;color:#EC1264">El problema</p>
         <h2 id="problema-h2" style="margin:0;fontFamily:Poppins,sans-serif;fontWeight:700;fontSize:clamp(26px,3.4vw,38px);lineHeight:1.2;color:#0B1B2C">Todo el mundo «tiene redes sociales», ¿pero consigue resultados?</h2>
       </div>
-      <div style="display:grid;gridTemplateColumns:repeat(auto-fit,minmax(260px,1fr));gap:24px">
+      <div class="gm-reveal" style="display:grid;gridTemplateColumns:repeat(auto-fit,minmax(260px,1fr));gap:24px">
         <div style="background:#F4F7FB;borderRadius:20px;padding:28px;display:flex;flexDirection:column;gap:10px;boxShadow:0 3px 16px rgba(11,27,44,0.07)">
           <h3 style="margin:0;fontFamily:Poppins,sans-serif;fontWeight:600;fontSize:18px;color:#0B1B2C">Contenido que nadie conecta con ventas</h3>
           <p style="margin:0;fontSize:15px;lineHeight:1.6;color:#5B6B7C">Publicaciones sueltas que entretienen un momento y mueren al mes siguiente, porque nadie las une con el resto del negocio.</p>
@@ -138,7 +140,7 @@
           <h2 id="pilares-h2" style="margin:0;fontFamily:Poppins,sans-serif;fontWeight:700;fontSize:clamp(26px,3.4vw,38px);lineHeight:1.2;color:#0B1B2C">Implementamos marketing y social media que funcionan.</h2>
           <p style="margin:0;fontSize:17px;lineHeight:1.6;color:#3E4C5C;textWrap:pretty">Somos una consultora de marketing digital y social media, diferente y humana, que convierte problemas en estrategias que generan ventas, desde la definición hasta la ejecución del día a día.</p>
         </div>
-        <div style="display:grid;gridTemplateColumns:repeat(auto-fit,minmax(260px,1fr));gap:24px">
+        <div class="gm-reveal" style="display:grid;gridTemplateColumns:repeat(auto-fit,minmax(260px,1fr));gap:24px">
           <div style="background:#FFFFFF;borderRadius:20px;padding:32px;display:flex;flexDirection:column;gap:12px;boxShadow:0 3px 16px rgba(11,27,44,0.07)">
             <p style="margin:0;fontFamily:Poppins,sans-serif;fontWeight:700;fontSize:15px;color:#14B8A6">01</p>
             <h3 style="margin:0;fontFamily:Poppins,sans-serif;fontWeight:600;fontSize:20px;color:#0B1B2C">Visibilidad</h3>
@@ -174,7 +176,7 @@
           <h2 id="servicios-h2" style="margin:0;fontFamily:Poppins,sans-serif;fontWeight:700;fontSize:clamp(26px,3.4vw,38px);lineHeight:1.2;color:#0B1B2C">Ponemos el marketing al servicio de tus ventas.</h2>
         </div>
       </div>
-      <div style="display:grid;gridTemplateColumns:repeat(auto-fit,minmax(260px,1fr));gap:20px">
+      <div class="gm-reveal" style="display:grid;gridTemplateColumns:repeat(auto-fit,minmax(260px,1fr));gap:20px">
         <a href="Servicios.html#social-ads" style="textDecoration:none;color:inherit;display:block;border:1px solid #EAEEF3;borderRadius:20px;padding:28px;transition:border-color .15s,box-shadow .15s;boxShadow:0 3px 16px rgba(11,27,44,0.07)" style-hover="borderColor:#EC1264" style-focus="outline:3px solid #EC1264;outlineOffset:3px">
           <h3 style="margin:0 0 8px;fontFamily:Poppins,sans-serif;fontWeight:600;fontSize:18px;color:#0B1B2C">Social Media + Ads</h3>
           <p style="margin:0;fontSize:14px;lineHeight:1.6;color:#5B6B7C">Metodología propia: Presencia, Conversión, Crecimiento.</p>
@@ -241,29 +243,31 @@
     </section>
 
     <!-- RESULTADOS -->
-    <section aria-labelledby="resultados-h2" data-screen-label="Home — Resultados" style="padding:clamp(56px,7vw,96px) clamp(20px,5vw,64px);maxWidth:1200px;margin:0 auto">
+    <section aria-labelledby="resultados-h2" data-screen-label="Home — Resultados" style="background:#0B1B2C;padding:clamp(56px,7vw,96px) clamp(20px,5vw,64px)">
+      <div style="maxWidth:1200px;margin:0 auto">
       <div style="maxWidth:70ch;marginBottom:44px;display:flex;flexDirection:column;gap:16px">
         <p style="margin:0;fontSize:14px;fontWeight:700;letterSpacing:0.08em;textTransform:uppercase;color:#EC1264">Resultados</p>
-        <h2 id="resultados-h2" style="margin:0;fontFamily:Poppins,sans-serif;fontWeight:700;fontSize:clamp(26px,3.4vw,38px);lineHeight:1.2;color:#0B1B2C">Nos medimos por lo que importa.</h2>
-        <p style="margin:0;fontSize:16px;lineHeight:1.6;color:#5B6B7C">Cada proyecto arranca con una línea base y cierra con un dato.</p>
+        <h2 id="resultados-h2" style="margin:0;fontFamily:Poppins,sans-serif;fontWeight:700;fontSize:clamp(26px,3.4vw,38px);lineHeight:1.2;color:#FFFFFF">Nos medimos por lo que importa.</h2>
+        <p style="margin:0;fontSize:16px;lineHeight:1.6;color:#B7C0CA">Cada proyecto arranca con una línea base y cierra con un dato.</p>
       </div>
-      <div style="display:grid;gridTemplateColumns:repeat(auto-fit,minmax(220px,1fr));gap:24px">
+      <div class="gm-reveal" style="display:grid;gridTemplateColumns:repeat(auto-fit,minmax(220px,1fr));gap:24px">
         <div style="borderTop:3px solid #EC1264;paddingTop:18px;display:flex;flexDirection:column;gap:8px">
-          <h3 style="margin:0;fontFamily:Poppins,sans-serif;fontWeight:600;fontSize:18px;color:#0B1B2C">Engagement</h3>
-          <p style="margin:0;fontSize:14px;lineHeight:1.6;color:#5B6B7C">Crecimiento de alcance e interacción con tu comunidad.</p>
+          <h3 style="margin:0;fontFamily:Poppins,sans-serif;fontWeight:600;fontSize:18px;color:#FFFFFF">Engagement</h3>
+          <p style="margin:0;fontSize:14px;lineHeight:1.6;color:#B7C0CA">Crecimiento de alcance e interacción con tu comunidad.</p>
         </div>
         <div style="borderTop:3px solid #14B8A6;paddingTop:18px;display:flex;flexDirection:column;gap:8px">
-          <h3 style="margin:0;fontFamily:Poppins,sans-serif;fontWeight:600;fontSize:18px;color:#0B1B2C">Leads</h3>
-          <p style="margin:0;fontSize:14px;lineHeight:1.6;color:#5B6B7C">Conversión comercial: mejora etapa por etapa del embudo Lead, MQL, SQL.</p>
+          <h3 style="margin:0;fontFamily:Poppins,sans-serif;fontWeight:600;fontSize:18px;color:#FFFFFF">Leads</h3>
+          <p style="margin:0;fontSize:14px;lineHeight:1.6;color:#B7C0CA">Conversión comercial: mejora etapa por etapa del embudo Lead, MQL, SQL.</p>
         </div>
         <div style="borderTop:3px solid #EC1264;paddingTop:18px;display:flex;flexDirection:column;gap:8px">
-          <h3 style="margin:0;fontFamily:Poppins,sans-serif;fontWeight:600;fontSize:18px;color:#0B1B2C">Ventas atribuidas</h3>
-          <p style="margin:0;fontSize:14px;lineHeight:1.6;color:#5B6B7C">Caja registradora moviéndose, no solo likes.</p>
+          <h3 style="margin:0;fontFamily:Poppins,sans-serif;fontWeight:600;fontSize:18px;color:#FFFFFF">Ventas atribuidas</h3>
+          <p style="margin:0;fontSize:14px;lineHeight:1.6;color:#B7C0CA">Caja registradora moviéndose, no solo likes.</p>
         </div>
         <div style="borderTop:3px solid #14B8A6;paddingTop:18px;display:flex;flexDirection:column;gap:8px">
-          <h3 style="margin:0;fontFamily:Poppins,sans-serif;fontWeight:600;fontSize:18px;color:#0B1B2C">Visibilidad</h3>
-          <p style="margin:0;fontSize:14px;lineHeight:1.6;color:#5B6B7C">Posicionamiento, menciones y tráfico en Google y en las IA.</p>
+          <h3 style="margin:0;fontFamily:Poppins,sans-serif;fontWeight:600;fontSize:18px;color:#FFFFFF">Visibilidad</h3>
+          <p style="margin:0;fontSize:14px;lineHeight:1.6;color:#B7C0CA">Posicionamiento, menciones y tráfico en Google y en las IA.</p>
         </div>
+      </div>
       </div>
     </section>
 
@@ -357,6 +361,17 @@
 </div>
 
 </x-dc>
+<script>
+  (function () {
+    var els = document.querySelectorAll('.gm-reveal');
+    var obs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('gm-visible'); }
+      });
+    }, { threshold: 0.15 });
+    els.forEach(function (el) { obs.observe(el); });
+  })();
+</script>
 <script type="text/x-dc" data-dc-script>
 class Component extends DCLogic {
   state = { cookieVisible: false };
