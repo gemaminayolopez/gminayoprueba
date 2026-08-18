@@ -24,6 +24,11 @@
     ::selection { background: #EC1264; color: #FFFFFF; }
     input, textarea { font-family: Inter, sans-serif; }
     input:focus-visible, textarea:focus-visible { outline: 3px solid #EC1264; outline-offset: 2px; }
+    @media (max-width: 640px) {
+      .gm-header-nav { margin-left: 0 !important; gap: 10px 16px !important; }
+      .gm-contacto-grid { grid-template-columns: 1fr !important; }
+      .gm-contacto-aside { margin-left: 0 !important; }
+    }
   </style>
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://www.gminayo.com/"},{"@type":"ListItem","position":2,"name":"Contacto","item":"https://www.gminayo.com/contacto"}]}
@@ -38,7 +43,7 @@
     <a href="index.html" aria-label="Gminayo, inicio" style="display:flex;alignItems:center;gap:10px;textDecoration:none" style-focus="outline:3px solid #EC1264;outlineOffset:4px;borderRadius:8px">
       <img src="logolockupnotag.png" alt="Gminayo" style="height:76px;width:auto;display:block">
     </a>
-    <nav aria-label="Navegación principal" style="display:flex;alignItems:center;flexWrap:wrap;gap:6px 16px;marginLeft:115px">
+    <nav aria-label="Navegación principal" class="gm-header-nav" style="display:flex;alignItems:center;flexWrap:wrap;gap:6px 16px;marginLeft:115px">
       <a href="Servicios.html" style="color:#0B1B2C;textDecoration:none;fontSize:17px;fontWeight:500" style-hover="color:#EC1264" style-focus="outline:3px solid #EC1264;outlineOffset:4px;borderRadius:4px">Servicios</a>
       <a href="Paquetes.html" style="color:#0B1B2C;textDecoration:none;fontSize:17px;fontWeight:500" style-hover="color:#EC1264" style-focus="outline:3px solid #EC1264;outlineOffset:4px;borderRadius:4px">Paquetes</a>
       <a href="Casos-de-Exito.html" style="color:#0B1B2C;textDecoration:none;fontSize:17px;fontWeight:500" style-hover="color:#EC1264" style-focus="outline:3px solid #EC1264;outlineOffset:4px;borderRadius:4px">Casos de éxito</a>
@@ -56,7 +61,7 @@
       <span style="color:#0B1B2C;fontSize:17px;fontWeight:600">Contacto</span>
     </nav>
 
-    <section aria-labelledby="contacto-h1" style="padding:clamp(32px,5vw,56px) clamp(20px,5vw,64px) clamp(56px,7vw,96px);maxWidth:1200px;margin:0 auto;display:grid;gridTemplateColumns:minmax(280px,1fr) minmax(300px,440px);gap:56px;alignItems:start">
+    <section aria-labelledby="contacto-h1" class="gm-contacto-grid" style="padding:clamp(32px,5vw,56px) clamp(20px,5vw,64px) clamp(56px,7vw,96px);maxWidth:1200px;margin:0 auto;display:grid;gridTemplateColumns:minmax(280px,1fr) minmax(300px,440px);gap:56px;alignItems:start">
 
       <div style="display:flex;flexDirection:column;gap:20px">
         <p style="margin:0;fontSize:14px;fontWeight:700;letterSpacing:0.08em;textTransform:uppercase;color:#EC1264">Contacto</p>
@@ -115,7 +120,7 @@
       </div>
 
       <div style="display:flex;flexDirection:column;gap:24px">
-        <aside aria-label="Datos de contacto directo" style="background:#F4F7FB;borderRadius:24px;padding:32px;display:flex;flexDirection:column;gap:24px;boxShadow:0 3px 16px rgba(11,27,44,0.07);marginLeft:24px">
+        <aside aria-label="Datos de contacto directo" class="gm-contacto-aside" style="background:#F4F7FB;borderRadius:24px;padding:32px;display:flex;flexDirection:column;gap:24px;boxShadow:0 3px 16px rgba(11,27,44,0.07);marginLeft:24px">
           <div>
             <p style="margin:0 0 4px;fontSize:13px;fontWeight:700;letterSpacing:0.06em;textTransform:uppercase;color:#5B6B7C">Contacto directo</p>
             <p style="margin:0;fontFamily:Poppins,sans-serif;fontWeight:600;fontSize:19px;color:#0B1B2C">Gema Minayo López</p>
