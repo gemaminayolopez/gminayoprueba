@@ -23,7 +23,7 @@
     body { margin: 0; background: #FFFFFF; }
     ::selection { background: #EC1264; color: #FFFFFF; }
     @keyframes gm-fade-up { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
- .gm-reveal { opacity: 0; transform: translateY(28px); transition: opacity .7s ease, transform .7s ease; }
+  .gm-reveal { animation: gm-fade-up .8s ease; }
     .gm-reveal.gm-visible { opacity: 1; transform: translateY(0); }
     @media (max-width: 640px) {
       .gm-header-nav { margin-left: 0 !important; gap: 10px 16px !important; }
@@ -361,19 +361,7 @@
 </div>
 
 </x-dc>
-<script>
-  (function () {
-    var els = document.querySelectorAll('.gm-reveal');
-    var obs = new IntersectionObserver(function (entries) {
-      entries.forEach(function (e) {
-        if (e.isIntersecting) { e.target.classList.add('gm-visible'); }
-      });
-    }, { threshold: 0.15 });
-    els.forEach(function (el) { obs.observe(el); });
-  })();
-</script>
-<script type="text/x-dc" data-dc-script>
-class Component extends DCLogic {
+<script type="text/x-dc" data-dc-script>class Component extends DCLogic {
   state = { cookieVisible: false };
 
   componentDidMount() {
