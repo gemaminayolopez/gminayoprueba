@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+    window.__resources = {
+      "https://unpkg.com/react@18.3.1/umd/react.production.min.js": "./vendor/react.production.min.js",
+      "https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js": "./vendor/react-dom.production.min.js",
+      "https://unpkg.com/@babel/standalone@7.29.0/babel.min.js": "./vendor/babel.min.js"
+    };
+  </script>
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="./tokens.css">
+  <link rel="stylesheet" href="./vendor/fonts/fonts.css">
+  <script src="./image-slot.js"></script>
+  <meta name="description" content="Checklist práctico de qué revisar antes de lanzar una campaña de Ads en redes sociales: público, creatividad, landing, presupuesto y medición.">
+  <style>
+    body { margin: 0; background: #FFFFFF; }
+    ::selection { background: #EC1264; color: #FFFFFF; }
+  </style>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Article","headline":"Qué revisar antes de lanzar una campaña de Ads en redes","author":{"@type":"Person","name":"Gema Minayo López"},"datePublished":"2026-08-12","publisher":{"@type":"Organization","name":"Gminayo"}}
+  </script>
+</helmet>
+
+<a href="#main-content" style="position:absolute;left:-9999px;top:0;background:#0B1B2C;color:#fff;padding:14px 20px;borderRadius:0 0 10px 0;fontFamily:Inter,sans-serif;fontWeight:600;fontSize:15px;zIndex:1000;textDecoration:none" style-focus="left:0;outline:3px solid #EC1264;outlineOffset:2px">Saltar al contenido</a>
+
+<div style="fontFamily:Inter,sans-serif;color:#0B1B2C;background:#FFFFFF;overflow-x:hidden">
+
+  <header style="display:flex;alignItems:center;flexWrap:wrap;gap:14px 40px;padding:18px clamp(20px,5vw,64px);borderBottom:1px solid #EAEEF3;position:relative;zIndex:10;background:#FFFFFF">
+    <a href="index.html" aria-label="Gminayo, inicio" style="display:flex;alignItems:center;gap:10px;textDecoration:none" style-focus="outline:3px solid #EC1264;outlineOffset:4px;borderRadius:8px">
+      <img src="logolockupnotag.png" alt="Gminayo" style="height:76px;width:auto;display:block">
+    </a>
+    <nav aria-label="Navegación principal" style="display:flex;alignItems:center;flexWrap:wrap;gap:6px 16px;marginLeft:115px">
+      <a href="Servicios.html" style="color:#0B1B2C;textDecoration:none;fontSize:17px;fontWeight:500" style-hover="color:#EC1264" style-focus="outline:3px solid #EC1264;outlineOffset:4px;borderRadius:4px">Servicios</a>
+      <a href="Paquetes.html" style="color:#0B1B2C;textDecoration:none;fontSize:17px;fontWeight:500" style-hover="color:#EC1264" style-focus="outline:3px solid #EC1264;outlineOffset:4px;borderRadius:4px">Paquetes</a>
+      <a href="Casos-de-Exito.html" style="color:#0B1B2C;textDecoration:none;fontSize:17px;fontWeight:500" style-hover="color:#EC1264" style-focus="outline:3px solid #EC1264;outlineOffset:4px;borderRadius:4px">Casos de éxito</a>
+      <a href="Blog.html" aria-current="page" style="color:#EC1264;textDecoration:none;fontSize:17px;fontWeight:600">Blog</a>
+      <a href="Sobre-Nosotros.html" style="color:#0B1B2C;textDecoration:none;fontSize:17px;fontWeight:500" style-hover="color:#EC1264" style-focus="outline:3px solid #EC1264;outlineOffset:4px;borderRadius:4px">Sobre nosotros</a>
+      <a href="Contacto.html" style="color:#0B1B2C;textDecoration:none;fontSize:17px;fontWeight:500" style-hover="color:#EC1264" style-focus="outline:3px solid #EC1264;outlineOffset:4px;borderRadius:4px">Contacto</a>
+    </nav>
+    <a href="Landing-Diagnostico.html" style="background:#EC1264;color:#FFFFFF;textDecoration:none;fontSize:14px;fontWeight:600;padding:10px 20px;borderRadius:999px;whiteSpace:nowrap;marginLeft:auto" style-hover="background:#c90e56" style-focus="outline:3px solid #0B1B2C;outlineOffset:3px">Reserva tu diagnóstico</a>
+  </header>
+
+  <main id="main-content">
+    <nav aria-label="Migas de pan" style="padding:20px clamp(20px,5vw,64px) 0;maxWidth:760px;margin:0 auto">
+      <a href="index.html" style="color:#5B6B7C;textDecoration:none;fontSize:14px" style-hover="color:#EC1264" style-focus="outline:3px solid #EC1264;outlineOffset:3px">Inicio</a>
+      <span style="color:#B7C0CA;fontSize:14px;margin:0 8px">/</span>
+      <a href="Blog.html" style="color:#5B6B7C;textDecoration:none;fontSize:14px" style-hover="color:#EC1264" style-focus="outline:3px solid #EC1264;outlineOffset:3px">Blog</a>
+      <span style="color:#B7C0CA;fontSize:14px;margin:0 8px">/</span>
+      <span style="color:#0B1B2C;fontSize:17px;fontWeight:600">Checklist de Ads</span>
+    </nav>
+
+    <article style="padding:clamp(32px,5vw,48px) clamp(20px,5vw,64px) clamp(64px,8vw,96px);maxWidth:760px;margin:0 auto;display:flex;flexDirection:column;gap:28px">
+      <header style="display:flex;flexDirection:column;gap:16px">
+        <span style="fontSize:13px;fontWeight:700;letterSpacing:0.06em;textTransform:uppercase;color:#14B8A6">Social Media</span>
+        <h1 style="margin:0;fontFamily:Poppins,sans-serif;fontWeight:700;fontSize:clamp(30px,4.2vw,46px);lineHeight:1.15;color:#0B1B2C">Qué revisar antes de lanzar una campaña de Ads en redes</h1>
+        <div style="display:flex;alignItems:center;gap:12px;fontSize:14px;color:#8A96A3">
+          <span>Gema Minayo López</span>
+          <span aria-hidden="true">·</span>
+          <time datetime="2026-08-12">12 de agosto de 2026</time>
+          <span aria-hidden="true">·</span>
+          <span>5 min de lectura</span>
+        </div>
+        <div style="display:flex;alignItems:center;gap:10px;flexWrap:wrap">
+          <span style="fontSize:13px;fontWeight:600;color:#5B6B7C">Compartir:</span>
+          <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.gminayo.com%2Fblog%2Fchecklist-ads" target="_blank" rel="noopener noreferrer" aria-label="Compartir en LinkedIn" style="display:flex;alignItems:center;justifyContent:center;width:34px;height:34px;borderRadius:10px;background:#F4F7FB;color:#0B1B2C;textDecoration:none" style-hover="background:#EC1264;color:#FFFFFF" style-focus="outline:3px solid #EC1264;outlineOffset:3px"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="4" fill="none"/><path d="M7.2 9.5H4.6V19H7.2V9.5ZM5.9 8.3C6.8 8.3 7.4 7.7 7.4 6.9C7.4 6.1 6.8 5.5 5.9 5.5C5 5.5 4.4 6.1 4.4 6.9C4.4 7.7 5 8.3 5.9 8.3ZM19.6 19V13.6C19.6 10.8 18.1 9.5 16.1 9.5C14.5 9.5 13.7 10.4 13.3 11V9.5H10.7C10.7 9.5 10.8 11.1 10.7 19H13.3V13.7C13.3 13.4 13.3 13.1 13.4 12.9C13.7 12.2 14.3 11.5 15.3 11.5C16.6 11.5 17.1 12.5 17.1 13.9V19H19.6Z"/></svg></a>
+          <a href="https://twitter.com/intent/tweet?text=Qu%C3%A9%20revisar%20antes%20de%20lanzar%20una%20campa%C3%B1a%20de%20Ads%20en%20redes&amp;url=https%3A%2F%2Fwww.gminayo.com%2Fblog%2Fchecklist-ads" target="_blank" rel="noopener noreferrer" aria-label="Compartir en X" style="display:flex;alignItems:center;justifyContent:center;width:34px;height:34px;borderRadius:10px;background:#F4F7FB;color:#0B1B2C;textDecoration:none" style-hover="background:#EC1264;color:#FFFFFF" style-focus="outline:3px solid #EC1264;outlineOffset:3px"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M18.9 3H21.7L15.6 10.1L22.8 21H17.2L12.8 14.9L7.7 21H4.9L11.4 13.4L4.5 3H10.2L14.2 8.6L18.9 3ZM17.9 19.2H19.5L9.5 4.7H7.8L17.9 19.2Z"/></svg></a>
+          <a href="https://api.whatsapp.com/send?text=Qu%C3%A9%20revisar%20antes%20de%20lanzar%20una%20campa%C3%B1a%20de%20Ads%20en%20redes%20https%3A%2F%2Fwww.gminayo.com%2Fblog%2Fchecklist-ads" target="_blank" rel="noopener noreferrer" aria-label="Compartir en WhatsApp" style="display:flex;alignItems:center;justifyContent:center;width:34px;height:34px;borderRadius:10px;background:#F4F7FB;color:#0B1B2C;textDecoration:none" style-hover="background:#EC1264;color:#FFFFFF" style-focus="outline:3px solid #EC1264;outlineOffset:3px"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M12 2C6.5 2 2 6.5 2 12C2 13.9 2.5 15.7 3.5 17.2L2 22L7 20.6C8.4 21.4 10.2 21.9 12 21.9C17.5 21.9 22 17.5 22 12C22 6.5 17.5 2 12 2ZM12 20.1C10.4 20.1 8.9 19.6 7.6 18.8L7.3 18.6L4.2 19.5L5.1 16.5L4.9 16.2C4 14.9 3.5 13.4 3.5 12C3.5 7.4 7.4 3.6 12 3.6C16.6 3.6 20.4 7.4 20.4 12C20.4 16.6 16.6 20.1 12 20.1ZM16.7 14.2C16.4 14.1 15.1 13.5 14.9 13.4C14.6 13.3 14.4 13.3 14.2 13.6C14.1 13.8 13.6 14.4 13.4 14.6C13.3 14.8 13.1 14.8 12.9 14.7C11.5 14.1 10.6 13.5 9.7 12C9.5 11.7 9.7 11.5 9.9 11.3C10.1 11.2 10.2 11 10.3 10.8C10.4 10.6 10.4 10.5 10.5 10.3C10.6 10.1 10.5 9.9 10.4 9.8C10.3 9.7 9.9 8.4 9.7 7.9C9.5 7.4 9.4 7.5 9.2 7.5C9.1 7.5 8.9 7.5 8.7 7.5C8.5 7.5 8.2 7.5 7.9 7.9C7.7 8.2 6.9 8.9 6.9 10.2C6.9 11.5 7.9 12.8 8 13C8.1 13.1 9.9 15.9 12.7 17C15.1 18 15.5 17.8 16 17.7C16.5 17.7 17.5 17.1 17.8 16.5C18 15.9 18 15.4 17.9 15.3C17.8 15.2 17 14.5 16.7 14.2Z"/></svg></a>
+          <button type="button" onClick="{{ copyLink }}" aria-label="Copiar enlace del artículo" style="display:flex;alignItems:center;justifyContent:center;width:34px;height:34px;borderRadius:10px;background:#F4F7FB;color:#0B1B2C;border:none;cursor:pointer" style-hover="background:#EC1264;color:#FFFFFF" style-focus="outline:3px solid #EC1264;outlineOffset:3px"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1.5-1.5"/></svg></button>
+          <sc-if value="{{ linkCopied }}" hint-placeholder-val="{{ false }}"><span style="fontSize:13px;color:#14B8A6;fontWeight:600">¡Enlace copiado!</span></sc-if>
+        </div>
+      </header>
+
+      <image-slot id="foto-articulo-ads-cabecera" shape="rounded" radius="20" placeholder="Imagen de cabecera del artículo" style="width:100%;aspectRatio:16/9" src="foto-articulo-ads.jpg"></image-slot>
+
+      <div style="display:flex;flexDirection:column;gap:20px;fontSize:17px;lineHeight:1.75;color:#3E4C5C">
+        <p style="margin:0">Es fácil lanzar una campaña de Ads. Lo difícil es lanzarla sabiendo por qué va a funcionar. La mayoría de campañas que no dan resultado no fallan por el presupuesto, sino por algo que no se revisó antes de darle a "publicar".</p>
+        <p style="margin:0">Este es el checklist que usamos antes de activar cualquier campaña, para que cada euro invertido tenga una razón detrás.</p>
+
+        <h2 style="margin:12px 0 0;fontFamily:Poppins,sans-serif;fontWeight:600;fontSize:26px;color:#0B1B2C">1. Objetivo y público, antes que nada</h2>
+        <ul style="margin:0;padding:0 0 0 20px;display:flex;flexDirection:column;gap:10px">
+          <li>¿La campaña busca leads, ventas directas o visibilidad? El objetivo determina la estructura de la campaña, no al revés.</li>
+          <li>¿Está definida la audiencia con datos reales (intereses, comportamiento, remarketing), o es una segmentación genérica por edad y ubicación?</li>
+          <li>¿Hay una audiencia de exclusión para no gastar presupuesto en quien ya es cliente?</li>
+        </ul>
+
+        <h2 style="margin:12px 0 0;fontFamily:Poppins,sans-serif;fontWeight:600;fontSize:26px;color:#0B1B2C">2. Creatividad y copy</h2>
+        <ul style="margin:0;padding:0 0 0 20px;display:flex;flexDirection:column;gap:10px">
+          <li>¿La creatividad detiene el scroll en los primeros dos segundos?</li>
+          <li>¿Hay al menos dos variantes para hacer testing A/B, en vez de apostar todo a una sola pieza?</li>
+          <li>¿El copy comunica un beneficio concreto, o solo describe el producto?</li>
+          <li>¿La llamada a la acción es clara y coincide con lo que la persona encontrará al hacer clic?</li>
+        </ul>
+
+        <h2 style="margin:12px 0 0;fontFamily:Poppins,sans-serif;fontWeight:600;fontSize:26px;color:#0B1B2C">3. La landing, no solo el anuncio</h2>
+        <ul style="margin:0;padding:0 0 0 20px;display:flex;flexDirection:column;gap:10px">
+          <li>¿La página de destino carga rápido y se ve bien en móvil? La mayoría del tráfico de Ads llega desde el móvil.</li>
+          <li>¿El mensaje de la landing es coherente con el del anuncio? Un salto de discurso entre ambos dispara el rebote.</li>
+          <li>¿El formulario o el botón de compra está visible sin tener que hacer scroll?</li>
+        </ul>
+
+        <h2 style="margin:12px 0 0;fontFamily:Poppins,sans-serif;fontWeight:600;fontSize:26px;color:#0B1B2C">4. Presupuesto y medición</h2>
+        <ul style="margin:0;padding:0 0 0 20px;display:flex;flexDirection:column;gap:10px">
+          <li>¿El presupuesto diario permite que la plataforma salga de la fase de aprendizaje antes de sacar conclusiones?</li>
+          <li>¿Están instalados y verificados los píxeles de conversión antes de lanzar, no después?</li>
+          <li>¿Se ha definido qué es "éxito" en cifras concretas — coste por lead, coste por venta — antes de empezar a gastar?</li>
+        </ul>
+
+        <blockquote style="margin:8px 0;padding:20px 0 0;borderTop:2px solid #14B8A6;fontFamily:Poppins,sans-serif;fontWeight:600;fontSize:20px;lineHeight:1.4;color:#0B1B2C">Una campaña bien revisada antes de lanzarse ahorra más presupuesto del que cuesta revisarla.</blockquote>
+
+        <p style="margin:0">Ninguno de estos puntos sustituye a la estrategia de fondo, pero evita el error más caro de todos: gastar presupuesto en algo que estaba mal planteado desde el primer clic.</p>
+      </div>
+
+      <div style="display:flex;flexWrap:wrap;gap:10px;paddingTop:8px">
+        <span style="background:#F4F7FB;color:#3E4C5C;fontSize:13px;fontWeight:500;padding:6px 14px;borderRadius:999px">Ads</span>
+        <span style="background:#F4F7FB;color:#3E4C5C;fontSize:13px;fontWeight:500;padding:6px 14px;borderRadius:999px">Social Media</span>
+        <span style="background:#F4F7FB;color:#3E4C5C;fontSize:13px;fontWeight:500;padding:6px 14px;borderRadius:999px">Conversión</span>
+      </div>
+
+      <div style="display:flex;gap:16px;alignItems:center;paddingTop:24px;borderTop:1px solid #EAEEF3">
+        <div style="width:56px;height:56px;flexShrink:0">
+          <image-slot id="foto-autora-blog-ads" shape="circle" placeholder="Foto de Gema" style="width:100%;height:100%" src="foto-gema.jpg"></image-slot>
+        </div>
+        <div>
+          <p style="margin:0;fontFamily:Poppins,sans-serif;fontWeight:600;fontSize:16px;color:#0B1B2C">Gema Minayo López</p>
+          <p style="margin:2px 0 0;fontSize:14px;color:#5B6B7C">Fundadora de Gminayo. Más de 25 años en marketing digital y social media.</p>
+        </div>
+      </div>
+    </article>
+
+    <section aria-label="Más artículos" style="background:#F4F7FB;padding:clamp(48px,6vw,72px) clamp(20px,5vw,64px)">
+      <div style="maxWidth:1200px;margin:0 auto">
+        <h2 style="margin:0 0 28px;fontFamily:Poppins,sans-serif;fontWeight:700;fontSize:clamp(22px,2.6vw,28px);color:#0B1B2C">Sigue leyendo</h2>
+        <div style="display:grid;gridTemplateColumns:repeat(auto-fit,minmax(260px,1fr));gap:24px">
+          <a href="Articulo-Alcance-Sin-Ventas.html" style="textDecoration:none;color:inherit;display:flex;flexDirection:column;gap:12px;background:#FFFFFF;borderRadius:20px;padding:24px;boxShadow:0 3px 16px rgba(11,27,44,0.07)" style-focus="outline:3px solid #EC1264;outlineOffset:3px">
+            <span style="fontSize:12px;fontWeight:700;letterSpacing:0.06em;textTransform:uppercase;color:#14B8A6">Social Media</span>
+            <h3 style="margin:0;fontFamily:Poppins,sans-serif;fontWeight:600;fontSize:17px;lineHeight:1.3;color:#0B1B2C">Por qué tus redes sociales generan alcance pero no ventas</h3>
+          </a>
+          <a href="Articulo-Metricas-Redes.html" style="textDecoration:none;color:inherit;display:flex;flexDirection:column;gap:12px;background:#FFFFFF;borderRadius:20px;padding:24px;boxShadow:0 3px 16px rgba(11,27,44,0.07)" style-focus="outline:3px solid #EC1264;outlineOffset:3px">
+            <span style="fontSize:12px;fontWeight:700;letterSpacing:0.06em;textTransform:uppercase;color:#EC1264">SEO y GEO</span>
+            <h3 style="margin:0;fontFamily:Poppins,sans-serif;fontWeight:600;fontSize:17px;lineHeight:1.3;color:#0B1B2C">Métricas de redes sociales que sí importan (y las que no)</h3>
+          </a>
+          <a href="Articulo-Calendario-Contenido.html" style="textDecoration:none;color:inherit;display:flex;flexDirection:column;gap:12px;background:#FFFFFF;borderRadius:20px;padding:24px;boxShadow:0 3px 16px rgba(11,27,44,0.07)" style-focus="outline:3px solid #EC1264;outlineOffset:3px">
+            <span style="fontSize:12px;fontWeight:700;letterSpacing:0.06em;textTransform:uppercase;color:#14B8A6">Social Media</span>
+            <h3 style="margin:0;fontFamily:Poppins,sans-serif;fontWeight:600;fontSize:17px;lineHeight:1.3;color:#0B1B2C">3 señales de que tu calendario de contenido no está conectado con ventas</h3>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="cta-h2" style="background:#0B1B2C;padding:clamp(56px,8vw,90px) clamp(20px,5vw,64px);textAlign:center">
+      <div style="maxWidth:700px;margin:0 auto;display:flex;flexDirection:column;gap:28px;alignItems:center">
+        <h2 id="cta-h2" style="margin:0;fontFamily:Poppins,sans-serif;fontWeight:700;fontSize:clamp(26px,3.6vw,38px);lineHeight:1.3;color:#FFFFFF;textWrap:pretty">Tu marca no necesita más servicios. Necesita la estrategia adecuada.</h2>
+        <p style="margin:0;fontSize:17px;lineHeight:1.6;color:#B7C0CA;maxWidth:56ch;textWrap:pretty">Elige por dónde empezar. Nosotros conectaremos cada pieza para que todo trabaje hacia el mismo objetivo: hacer crecer tu negocio.</p>
+        <a href="Landing-Diagnostico.html" style="background:#EC1264;color:#FFFFFF;textDecoration:none;fontSize:16px;fontWeight:600;padding:16px 32px;borderRadius:999px" style-hover="background:#ff2f7f" style-focus="outline:3px solid #FFFFFF;outlineOffset:3px">Reserva tu diagnóstico</a>
+      </div>
+    </section>
+  </main>
+
+  <footer style="padding:clamp(48px,6vw,72px) clamp(20px,5vw,64px) 32px;background:#FFFFFF;borderTop:1px solid #EAEEF3">
+    <div style="maxWidth:1200px;margin:0 auto;display:grid;gridTemplateColumns:repeat(auto-fit,minmax(220px,1fr));gap:40px;marginBottom:40px">
+      <div style="display:flex;flexDirection:column;gap:14px">
+        <img src="logolockupnotag.png" alt="Gminayo" style="height:88px;width:auto;alignSelf:flex-start">
+        <p style="margin:0;fontFamily:Inter,sans-serif;fontWeight:500;fontSize:13px;color:#8A96A3">Marketing con sonrisa humana</p>
+      </div>
+      <nav aria-label="Mapa del sitio" style="display:flex;flexDirection:column;gap:10px">
+        <p style="margin:0 0 4px;fontSize:13px;fontWeight:700;letterSpacing:0.06em;textTransform:uppercase;color:#0B1B2C">Navegación</p>
+        <a href="Servicios.html" style="color:#5B6B7C;textDecoration:none;fontSize:14px" style-hover="color:#EC1264" style-focus="outline:3px solid #EC1264;outlineOffset:3px">Servicios</a>
+        <a href="Paquetes.html" style="color:#5B6B7C;textDecoration:none;fontSize:14px" style-hover="color:#EC1264" style-focus="outline:3px solid #EC1264;outlineOffset:3px">Paquetes</a>
+        <a href="Casos-de-Exito.html" style="color:#5B6B7C;textDecoration:none;fontSize:14px" style-hover="color:#EC1264" style-focus="outline:3px solid #EC1264;outlineOffset:3px">Casos de éxito</a>
+        <a href="Blog.html" style="color:#5B6B7C;textDecoration:none;fontSize:14px" style-hover="color:#EC1264" style-focus="outline:3px solid #EC1264;outlineOffset:3px">Blog</a>
+        <a href="Sobre-Nosotros.html" style="color:#5B6B7C;textDecoration:none;fontSize:14px" style-hover="color:#EC1264" style-focus="outline:3px solid #EC1264;outlineOffset:3px">Sobre nosotros</a>
+      </nav>
+      <div style="display:flex;flexDirection:column;gap:10px">
+        <p style="margin:0 0 4px;fontSize:13px;fontWeight:700;letterSpacing:0.06em;textTransform:uppercase;color:#0B1B2C">Contacto</p>
+        <p style="margin:0;fontSize:14px;color:#5B6B7C">Gema Minayo López</p>
+        <a href="mailto:gema@gminayo.com" style="color:#5B6B7C;textDecoration:none;fontSize:14px" style-hover="color:#EC1264" style-focus="outline:3px solid #EC1264;outlineOffset:3px">gema@gminayo.com</a>
+        <a href="tel:+34697540182" style="color:#5B6B7C;textDecoration:none;fontSize:14px" style-hover="color:#EC1264" style-focus="outline:3px solid #EC1264;outlineOffset:3px">+34 697 540 182</a>
+        <div style="display:flex;gap:10px;marginTop:6px">
+          <a href="https://www.linkedin.com/in/gemaminayolopez/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Gminayo" style="display:flex;alignItems:center;justifyContent:center;width:36px;height:36px;borderRadius:10px;background:#F4F7FB;color:#0B1B2C;textDecoration:none" style-hover="background:#EC1264;color:#FFFFFF" style-focus="outline:3px solid #EC1264;outlineOffset:3px"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="4" fill="none"/><path d="M7.2 9.5H4.6V19H7.2V9.5ZM5.9 8.3C6.8 8.3 7.4 7.7 7.4 6.9C7.4 6.1 6.8 5.5 5.9 5.5C5 5.5 4.4 6.1 4.4 6.9C4.4 7.7 5 8.3 5.9 8.3ZM19.6 19V13.6C19.6 10.8 18.1 9.5 16.1 9.5C14.5 9.5 13.7 10.4 13.3 11V9.5H10.7C10.7 9.5 10.8 11.1 10.7 19H13.3V13.7C13.3 13.4 13.3 13.1 13.4 12.9C13.7 12.2 14.3 11.5 15.3 11.5C16.6 11.5 17.1 12.5 17.1 13.9V19H19.6Z"/></svg></a>
+          <a href="https://www.instagram.com/gminayo_es/" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Gminayo" style="display:flex;alignItems:center;justifyContent:center;width:36px;height:36px;borderRadius:10px;background:#F4F7FB;color:#0B1B2C;textDecoration:none" style-hover="background:#EC1264;color:#FFFFFF" style-focus="outline:3px solid #EC1264;outlineOffset:3px"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg></a>
+        </div>
+      </div>
+      <div style="display:flex;flexDirection:column;gap:10px">
+        <p style="margin:0 0 4px;fontSize:13px;fontWeight:700;letterSpacing:0.06em;textTransform:uppercase;color:#0B1B2C">Legal</p>
+        <a href="Aviso-Legal.html" style="color:#5B6B7C;textDecoration:none;fontSize:14px" style-hover="color:#EC1264" style-focus="outline:3px solid #EC1264;outlineOffset:3px">Aviso legal</a>
+        <a href="Politica-Privacidad.html" style="color:#5B6B7C;textDecoration:none;fontSize:14px" style-hover="color:#EC1264" style-focus="outline:3px solid #EC1264;outlineOffset:3px">Política de privacidad</a>
+        <a href="Politica-Cookies.html" style="color:#5B6B7C;textDecoration:none;fontSize:14px" style-hover="color:#EC1264" style-focus="outline:3px solid #EC1264;outlineOffset:3px">Política de cookies</a>
+      </div>
+    </div>
+    <p style="margin:0;paddingTop:24px;borderTop:1px solid #EAEEF3;fontSize:13px;color:#8A96A3;maxWidth:1200px;marginLeft:auto;marginRight:auto">© 2026 Gminayo — Gema Minayo López. Todos los derechos reservados.</p>
+  </footer>
+
+  <sc-if value="{{ cookieVisible }}" hint-placeholder-val="{{ false }}">
+    <div role="dialog" aria-label="Consentimiento de cookies" style="position:fixed;left:0;right:0;bottom:0;zIndex:200;background:#0B1B2C;color:#FFFFFF;padding:20px clamp(20px,5vw,64px);display:flex;flexWrap:wrap;gap:16px 32px;alignItems:center;justifyContent:space-between;boxShadow:0 -4px 20px rgba(11,27,44,0.2)">
+      <p style="margin:0;fontSize:14px;lineHeight:1.5;maxWidth:60ch;color:#E6EAF0">Usamos cookies propias y de terceros para mejorar tu experiencia y medir el uso del sitio. Puedes aceptarlas o rechazarlas. Más información en nuestra <a href="Politica-Cookies.html" style="color:#FFFFFF;fontWeight:600" style-hover="color:#8FE3D6">Política de cookies</a>.</p>
+      <div style="display:flex;gap:12px;flexWrap:wrap">
+        <button type="button" onClick="{{ rejectCookies }}" style="background:transparent;color:#FFFFFF;border:1px solid #4A5A6B;borderRadius:999px;padding:10px 20px;fontSize:14px;fontWeight:600;cursor:pointer;fontFamily:Inter,sans-serif" style-hover="borderColor:#FFFFFF" style-focus="outline:3px solid #14B8A6;outlineOffset:2px">Rechazar</button>
+        <button type="button" onClick="{{ acceptCookies }}" style="background:#EC1264;color:#FFFFFF;border:none;borderRadius:999px;padding:10px 22px;fontSize:14px;fontWeight:600;cursor:pointer;fontFamily:Inter,sans-serif" style-hover="background:#c90e56" style-focus="outline:3px solid #FFFFFF;outlineOffset:2px">Aceptar</button>
+      </div>
+    </div>
+  </sc-if>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { cookieVisible: false, linkCopied: false };
+
+  componentDidMount() {
+    try {
+      const consent = localStorage.getItem('gminayo-cookie-consent');
+      if (!consent) this.setState({ cookieVisible: true });
+    } catch (e) {}
+  }
+
+  acceptCookies = () => {
+    try { localStorage.setItem('gminayo-cookie-consent', 'accepted'); } catch (e) {}
+    this.setState({ cookieVisible: false });
+  };
+
+  copyLink = () => {
+    try {
+      navigator.clipboard.writeText('https://www.gminayo.com/blog/checklist-ads');
+      this.setState({ linkCopied: true });
+      setTimeout(() => this.setState({ linkCopied: false }), 2500);
+    } catch (e) {}
+  };
+
+  rejectCookies = () => {
+    try { localStorage.setItem('gminayo-cookie-consent', 'rejected'); } catch (e) {}
+    this.setState({ cookieVisible: false });
+  };
+
+  renderVals() {
+    return {
+      cookieVisible: this.state.cookieVisible,
+      acceptCookies: this.acceptCookies,
+      rejectCookies: this.rejectCookies,
+      copyLink: this.copyLink,
+      linkCopied: this.state.linkCopied,
+    };
+  }
+}
+
+</script>
+</body>
+</html>
